@@ -20,3 +20,4 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 - [ ] Projects — a `Project` entity for grouping sessions, project-scoped ambient chat
 - [ ] Add MCP or tool for cross-session and per project memory using RAG or similar tool
 - [ ] Make it self-learning assistant
+- [ ] Move frome local render to server render
