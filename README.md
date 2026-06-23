@@ -21,7 +21,7 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 
 - [x] OAuth2 providers — sign-in via OAuth2 (in addition to email/password)
 - [x] Projects — a `Project` entity for grouping sessions, project-scoped ambient chat
-- [ ] Add MCP or tool for cross-session and per project memory using RAG or similar tool
+- [x] Add tool for cross-session and per project memory using RAG or similar tool
 - [x] Make it self-learning assistant
 - [ ] Move from local render to server render
 - [ ] Context saving tool
