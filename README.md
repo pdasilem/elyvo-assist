@@ -12,7 +12,7 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 
 - **Windows** — native `set_content_protected`, works out of the box for all capture types.
 - **macOS** — native `set_content_protected`; reliable on macOS 14 and earlier. On macOS 15+ undetectability is **NOT** guaranteed and the window may appear in captures.
-- **Linux (KDE / KWin)** — screen recording / sharing works out of the box via `excludeFromCapture`. Static screenshots (Spectacle, PrintScreen) are **NOT** hidden without a KWin patch — see `elyvo-server/scripts/kwin-screenshot-patch.sh`.
+- **Linux (KDE / KWin)** — screen recording / sharing works out of the box via `excludeFromCapture`. Static screenshots (Spectacle, PrintScreen) are **NOT** hidden without a KWin patch — see `elyvo-assist-src/scripts/kwin/kwin-screenshot-patch.sh`.
 - **Browser-based Zoom/Meet** — the OS window picker may show a preview, but the window content is hidden during the stream.
 
 > **Manjaro / Ubuntu** — full screenshot protection requires patching KWin (see the script above). The patch must be reapplied after every KWin update.
