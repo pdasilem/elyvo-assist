@@ -25,4 +25,4 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 - [x] Make it self-learning assistant
 - [ ] Move from local render to server render
 - [ ] Context saving tool
-- [ ] Add centralized theme management to overlay chats
+- [x] Add centralized theme management to overlay chats
