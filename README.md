@@ -24,7 +24,7 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 - [x] Add tool for cross-session and per project memory using RAG or similar tool
 - [x] Make it self-learning assistant
 - [ ] Move from local render to server render
-- [ ] Context saving tool
+- [x] Context saving tool
 - [x] Add centralized theme management to overlay chats
 - [ ] Add mobile app
 - [ ] Add web-search tool
