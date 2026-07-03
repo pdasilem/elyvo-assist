@@ -76,27 +76,24 @@ sudo pacman -U elyvo-assist-X.Y.Z-1-x86_64.pkg.tar.zst
 
 ## First launch
 
-1. **Sign in.** Elyvo Assist authenticates through your Elyvo account. You can sign in with **email and password** 
-   or with available **OAuth2 Provider**. New users can create an account from the same screen.
-2. **Onboarding.** A short wizard asks a few questions about you and what you do so the assistant can personalize 
-   its answers. You can optionally attach any file describing you; it is used only to give the assistant more 
-   context about you. You can revisit and edit these answers later from your profile.
-3. **Splash → overlay.** After sign-in the app starts minimized into a small splash, then runs in the background. Bring up the chat overlay any time with the toggle hotkey (default `Ctrl+\`).
+1. **Sign in.** Sign in with **email and password**, a **one-time email code**, or **Google**. New accounts are created from the same screen (email → verification code → set a password).
+2. **Onboarding.** A short setup wizard walks you through a few steps — including **permissions** and **creating your first project** — and ends with an **About you** step where you can optionally attach a file (`.pdf`, `.doc`, `.docx`, `.md`, `.txt`) to give the assistant more context about you. You can edit this later from your **Profile**.
+3. **Start using it.** After onboarding the **Dashboard** opens. Summon the chat overlay at any time with the toggle hotkey (default `Ctrl+\`).
 
 ---
 
 ## Permissions
 
-To listen and to see your screen, Elyvo Assist needs OS-level permissions. Open **Settings → Permissions** to review and grant them. The app requests:
+To listen and to see your screen, Elyvo Assist needs OS-level permissions. The Permissions panel lists what the app needs and shows each as **Granted**, **Denied**, or **Not determined**, with a button to request it:
 
 - **Microphone** — to capture what you say.
-- **System audio** — to capture the other side of a call (the audio coming out of your speakers).
-- **Screen recording / capture** — so *Ask about my screen* can see the active window.
-- **Accessibility** (macOS) — required for global hotkeys and overlay positioning.
+- **Screen capture** — so *Ask about my screen* can see the active window.
+- **Notifications** — to show desktop notifications.
+- **Autostart** — to launch Elyvo automatically when you sign in.
 
-Each permission shows a status of **Granted**, **Denied**, or **Not determined**, with a button to request it. If you deny a permission by mistake, grant it from your OS settings and reopen the panel.
+On **Windows** and **macOS**, these are handled through the normal OS prompts. On **Linux**, grant them explicitly here; if you deny one by mistake, grant it from your OS settings and reopen the panel.
 
-> On Linux, system-audio capture uses PipeWire and the desktop portal. Make sure PipeWire is running (it is the default on current Manjaro and Ubuntu).
+> On Linux, microphone and system-audio capture use PipeWire and the desktop portal. Make sure PipeWire is running (it is the default on current Manjaro and Ubuntu).
 
 ---
 
@@ -123,7 +120,7 @@ To rebind, open **Settings → Keybinds**, click a shortcut, and press the new c
 
 ### Sessions
 
-A **session** is when Elyvo is actively listening and keeping context. Start or stop a session with `Ctrl+Shift+\`. During a session, Elyvo captures your microphone and (optionally) system audio, transcribes it live, and keeps the running transcript as context for your questions. You can choose which audio input device to use, and test your microphone and system audio levels, from Settings.
+A **session** is when Elyvo is actively listening and keeping context. Start or stop a session with `Ctrl+Shift+\`. During a session, Elyvo captures your microphone and system audio, transcribes it live, and keeps the running transcript as context for your questions. Elyvo uses your system's **default** input device (you can't change it in the app); in Settings you can see the detected device and test your microphone and system-audio levels with live meters.
 
 ### Ask about your screen or audio
 
@@ -149,12 +146,17 @@ Ambient chat is a lightweight, always-available chat that follows you across the
 - **Members** — see who's in the project and invite others by email (each invitee shows as *pending* until they accept).
 - **Memory** — facts and context the assistant should remember across sessions in that project.
 - **Rules** — guidance the assistant follows for that project.
+- **Settings** — a per-project **mode**, **output language**, and **transcript language**, plus **Enrich context** — a toggle (off by default) that lets the assistant pull relevant context from your *other* sessions in the same project (cross-session recall).
 
 When someone invites *you* to their project, the invitation appears at the top of **Projects** with **Accept** / **Reject** buttons. Ambient chat can be scoped to a project so answers draw on that project's memory and rules.
 
+### Calendar and meetings
+
+Connect **Google Calendar** (from **Settings → General**) to see your upcoming meetings inside Elyvo. From a meeting you can start a session or jump straight into the call, so the assistant is listening from the moment it begins.
+
 ### Dashboard and history
 
-The **Dashboard** is your home base: it lists past sessions as cards and lets you open a session's detail — its transcript, notes, and meeting summary. Use it to review or follow up after a meeting.
+The **Dashboard** is your home base: it lists past sessions as cards (searchable) and lets you open a session's detail, which has three tabs — **Summary** (the meeting summary), **Transcript** (the captured transcript), and **Usage** (the questions you asked Elyvo during the session and its answers). Use it to review or follow up after a meeting.
 
 ### Memory and self-learning
 
@@ -177,7 +179,7 @@ The overlay is deliberately invisible to capture so you can use it during a shar
 
 Open Settings from the user menu. The tabs are:
 
-- **General** — core preferences.
+- **General** — core preferences, the detected audio input device and the microphone / system-audio test meters, Google Calendar connection, screen-capture options, and **Check for updates**.
 - **Keybinds** — view and rebind every hotkey.
 - **Profile** — your onboarding answers, user memory, and disambiguations.
 - **Security** — account security options.
@@ -188,7 +190,9 @@ Open Settings from the user menu. The tabs are:
 
 ## Updating
 
-Download the newest installer for your platform from [Releases](https://github.com/pdasilem/elyvo-assist/releases) and run it over your existing install — settings and sign-in are preserved.
+Elyvo Assist does **not** update itself. When a newer release is available, a **New version!** notice appears on your Dashboard with a link to download it; you can also trigger **Check for updates** in **Settings → General**, which opens the Releases page in your browser.
+
+To update, download the newest installer for your platform from [Releases](https://github.com/pdasilem/elyvo-assist/releases) and run it over your existing install — settings and sign-in are preserved.
 
 - **Arch / Manjaro:** re-run the `install.sh` from the latest release, or `sudo pacman -U` the new `.pkg.tar.zst`.
 - **Debian / Ubuntu:** `sudo apt install ./elyvo-assist-<new-version>-linux-x86_64.deb`.
@@ -211,7 +215,7 @@ Download the newest installer for your platform from [Releases](https://github.c
 
 **The overlay won't appear.** Make sure the app is running (check the tray/menu bar) and press the toggle hotkey (`Ctrl+\`). On macOS, confirm Accessibility permission is granted, otherwise global hotkeys won't fire.
 
-**No audio is captured.** Check **Settings → Permissions** for microphone and system-audio access, then pick the right input device and use the mic/system-audio test in Settings. On Linux, confirm PipeWire is running.
+**No audio is captured.** Check the Permissions panel for microphone and screen-capture access, then use the microphone / system-audio test in **Settings → General** to confirm levels. Elyvo uses your system's default input device, so set the right default in your OS sound settings. On Linux, confirm PipeWire is running.
 
 **The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default; static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing). Re-apply it after KWin updates.
 

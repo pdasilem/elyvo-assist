@@ -27,5 +27,5 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 - [x] Context saving tool
 - [x] Add centralized theme management to overlay chats
 - [ ] Add mobile app
-- [ ] Add web-search tool
-- [ ] Add centralized message overlay
+- [x] Add web-search tool
+- [x] Add centralized message overlay
