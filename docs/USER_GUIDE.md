@@ -169,7 +169,8 @@ Elyvo improves with use. Under your **Profile** you can review and edit:
 
 The overlay is deliberately invisible to capture so you can use it during a shared call without it appearing in the stream. Coverage differs by platform — the [main README](../README.md#window-protection-from-screen-sharing) is the authoritative matrix. In short:
 
-- **Windows** — hidden from all capture types out of the box.
+- **Windows 11** — hidden from all capture types out of the box.
+- **Windows 10** — same protection, but **not guaranteed**: a known OS limitation can show the overlay as a black rectangle in the capture instead of hiding it cleanly.
 - **Linux (KDE / KWin)** — hidden from screen *recording and sharing* out of the box; hiding it from static *screenshots* (Spectacle/PrintScreen) needs a one-time KWin patch, re-applied after KWin updates.
 - **macOS** — uses the same native content-protection mechanism. Reliable on **macOS 14 and earlier**; on **macOS 15 and later** undetectability is **not guaranteed** and the overlay may appear in captures.
 
