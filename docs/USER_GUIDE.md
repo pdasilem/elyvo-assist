@@ -150,6 +150,15 @@ Ambient chat is a lightweight, always-available chat that follows you across the
 
 When someone invites *you* to their project, the invitation appears at the top of **Projects** with **Accept** / **Reject** buttons. Ambient chat can be scoped to a project so answers draw on that project's memory and rules.
 
+### Documents
+
+Elyvo can keep a personal library of reference documents that you can pull up as their own overlay while you work — handy for keeping notes, a brief, or a checklist on hand during a call.
+
+- **Manage your documents.** In **Settings → Resources**, add Markdown (`.md`) files — up to **1 MB** each — under *Your documents*, or delete ones you no longer need. Documents are private to your account.
+- **Enable per project.** For the active project, tick the documents you want ready to hand. Enabled documents **auto-open as tabs** in the Documents viewer whenever you open it for that project. Enabling a document controls what the viewer shows for that project; it does not feed the file's contents into the assistant's answers.
+- **Open the viewer.** From the chat overlay's session menu (the `···` button), choose **Documents**. It opens as its own draggable window that, like the main overlay, is **hidden from screen sharing and recording**. The same menu item toggles it closed.
+- **Read and switch.** Each document opens in its own tab. Use the **+** tab to open any of your documents, click a tab to switch, and **×** to close it. Content renders as formatted Markdown and follows your chat theme and font size.
+
 ### Calendar and meetings
 
 Connect **Google Calendar** (from **Settings → General**) to see your upcoming meetings inside Elyvo. From a meeting you can start a session or jump straight into the call, so the assistant is listening from the moment it begins.
@@ -182,6 +191,7 @@ Open Settings from the user menu. The tabs are:
 
 - **General** — core preferences, the detected audio input device and the microphone / system-audio test meters, Google Calendar connection, screen-capture options, and **Check for updates**.
 - **Keybinds** — view and rebind every hotkey.
+- **Resources** — upload and manage your Markdown documents, and choose which are enabled for the active project (see [Documents](#documents)).
 - **Profile** — your onboarding answers, user memory, and disambiguations.
 - **Security** — account security options.
 - **Language** — interface / response language.
