@@ -4,7 +4,19 @@ Desktop AI assistant for meetings, research, and brainstorming sessions. Runs as
 
 This repository hosts public releases. Client source code is in `elyvo-assist-src`. Installers and binaries are published through GitHub Releases.
 
-📖 **User Guide** — installation per platform and a full features overview: [English](docs/USER_GUIDE.md) · [Русский](docs/USER_GUIDE.ru.md).
+📖 **User Guide** — installation per platform and a full features overview, available in every language the app's interface supports:
+
+| Language | Guide |
+|----------|-------|
+| English | [USER_GUIDE.md](docs/USER_GUIDE.md) |
+| Беларуская (Belarusian) | [USER_GUIDE.be.md](docs/USER_GUIDE.be.md) |
+| Deutsch (German) | [USER_GUIDE.de.md](docs/USER_GUIDE.de.md) |
+| Español (Spanish) | [USER_GUIDE.es.md](docs/USER_GUIDE.es.md) |
+| Français (French) | [USER_GUIDE.fr.md](docs/USER_GUIDE.fr.md) |
+| Italiano (Italian) | [USER_GUIDE.it.md](docs/USER_GUIDE.it.md) |
+| Português (Portuguese) | [USER_GUIDE.pt.md](docs/USER_GUIDE.pt.md) |
+| Русский (Russian) | [USER_GUIDE.ru.md](docs/USER_GUIDE.ru.md) |
+| Українська (Ukrainian) | [USER_GUIDE.uk.md](docs/USER_GUIDE.uk.md) |
 
 ## Window protection from screen sharing
 

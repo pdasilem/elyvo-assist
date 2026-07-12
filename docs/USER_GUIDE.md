@@ -1,6 +1,6 @@
 # Elyvo Assist — User Guide
 
-> 🇷🇺 Это руководство также доступно на [русском](USER_GUIDE.ru.md).
+> 🌐 This guide is also available in: **English** · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · [Español](USER_GUIDE.es.md) · [Français](USER_GUIDE.fr.md) · [Italiano](USER_GUIDE.it.md) · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
 Elyvo Assist is a desktop AI assistant for meetings, research, and brainstorming. It lives as a translucent overlay above any window, summoned with a hotkey. It can listen to your microphone and system audio, transcribe live, look at your screen, and answer questions in context — while staying hidden from screen sharing and screen recording.
 
@@ -84,14 +84,14 @@ sudo pacman -U elyvo-assist-X.Y.Z-1-x86_64.pkg.tar.zst
 
 ## Permissions
 
-To listen and to see your screen, Elyvo Assist needs OS-level permissions. The Permissions panel lists what the app needs and shows each as **Granted**, **Denied**, or **Not determined**, with a button to request it:
+To listen and to see your screen, Elyvo Assist needs two OS-level permissions, requested during onboarding:
 
 - **Microphone** — to capture what you say.
 - **Screen capture** — so *Ask about my screen* can see the active window.
-- **Notifications** — to show desktop notifications.
-- **Autostart** — to launch Elyvo automatically when you sign in.
 
-On **Windows** and **macOS**, these are handled through the normal OS prompts. On **Linux**, grant them explicitly here; if you deny one by mistake, grant it from your OS settings and reopen the panel.
+On **Windows** and **macOS**, these are handled through the normal OS prompts. On **Linux**, grant them when asked; if you deny one by mistake, grant it from your OS's privacy/permissions settings instead.
+
+Audio and microphone settings themselves can't be configured inside the app — Elyvo always uses your system's **default** input and output device.
 
 > On Linux, microphone and system-audio capture use PipeWire and the desktop portal. Make sure PipeWire is running (it is the default on current Manjaro and Ubuntu).
 
@@ -130,8 +130,8 @@ Press **Ask Elyvo** (`Ctrl+Enter`) and Elyvo answers using what's currently on y
 
 **Modes** let you tailor how the assistant behaves for different situations. Each mode has its own system prompt and an optional notes template. Manage them under **Modes**:
 
-- Start from the **Template Gallery** or create a mode from scratch.
-- Edit the system prompt to set tone, role, and rules (for example, a "Sales call" mode vs. a "Standup" mode).
+- Start from the **Template Gallery** — its templates are provided by the server and change over time — or create a mode from scratch.
+- Edit the system prompt to set tone, role, and rules for that situation.
 - Attach **mode files** — reference material the assistant should keep in mind for that mode.
 - Mark one mode active; there is always a general/default mode available.
 
@@ -161,11 +161,11 @@ Elyvo can keep a personal library of reference documents that you can pull up as
 
 ### Calendar and meetings
 
-Connect **Google Calendar** (from **Settings → General**) to see your upcoming meetings inside Elyvo. From a meeting you can start a session or jump straight into the call, so the assistant is listening from the moment it begins.
+Connect **Google Calendar** (from **Settings → General**) to see your upcoming meetings inside Elyvo. On a meeting card, **Join meeting →** just opens the call link (Zoom/Meet/Teams) in your browser, while **Take Notes** starts a listening session. Shortly before a meeting, Elyvo also shows an in-app reminder with its own **Take Notes** button that does both at once — starts the session and opens the call link — so the assistant is listening from the moment you join.
 
 ### Dashboard and history
 
-The **Dashboard** is your home base: it lists past sessions as cards (searchable) and lets you open a session's detail, which has three tabs — **Summary** (the meeting summary), **Transcript** (the captured transcript), and **Usage** (the questions you asked Elyvo during the session and its answers). Use it to review or follow up after a meeting.
+The **Dashboard** is your home base: it lists past sessions as a searchable, date-grouped list (the search box is in the app header) and lets you open a session's detail, which has three tabs — **Summary** (the meeting summary), **Transcript** (the captured transcript), and **Usage** (the questions you asked Elyvo during the session and its answers). Use it to review or follow up after a meeting.
 
 ### Memory and self-learning
 
@@ -191,17 +191,17 @@ Open Settings from the user menu. The tabs are:
 
 - **General** — core preferences, the detected audio input device and the microphone / system-audio test meters, Google Calendar connection, screen-capture options, and **Check for updates**.
 - **Keybinds** — view and rebind every hotkey.
-- **Resources** — upload and manage your Markdown documents, and choose which are enabled for the active project (see [Documents](#documents)).
 - **Profile** — your onboarding answers, user memory, and disambiguations.
 - **Security** — account security options.
 - **Language** — interface / response language.
+- **Resources** — upload and manage your Markdown documents, and choose which are enabled for the active project (see [Documents](#documents)).
 - **Billing** — your subscription and plan (gates paid features such as ambient AI chat).
 
 ---
 
 ## Updating
 
-Elyvo Assist does **not** update itself. When a newer release is available, a **New version!** notice appears on your Dashboard with a link to download it; you can also trigger **Check for updates** in **Settings → General**, which opens the Releases page in your browser.
+Elyvo Assist does **not** update itself, but it does check automatically: the server polls GitHub for new releases (roughly every 8 hours, plus once on server startup) and, when a newer version is found, pushes a dismissible **"New version!"** announcement to your Dashboard with a download link. You can also trigger **Check for updates** in **Settings → General** at any time to open the [Releases](https://github.com/pdasilem/elyvo-assist/releases) page in your browser directly.
 
 To update, download the newest installer for your platform from [Releases](https://github.com/pdasilem/elyvo-assist/releases) and run it over your existing install — settings and sign-in are preserved.
 
@@ -226,7 +226,7 @@ To update, download the newest installer for your platform from [Releases](https
 
 **The overlay won't appear.** Make sure the app is running (check the tray/menu bar) and press the toggle hotkey (`Ctrl+\`). On macOS, confirm Accessibility permission is granted, otherwise global hotkeys won't fire.
 
-**No audio is captured.** Check the Permissions panel for microphone and screen-capture access, then use the microphone / system-audio test in **Settings → General** to confirm levels. Elyvo uses your system's default input device, so set the right default in your OS sound settings. On Linux, confirm PipeWire is running.
+**No audio is captured.** Confirm microphone and screen-capture access in your OS privacy settings, then use the microphone / system-audio test in **Settings → General** to confirm levels. Elyvo uses your system's default input device, so set the right default in your OS sound settings. On Linux, confirm PipeWire is running.
 
 **The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default; static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing). Re-apply it after KWin updates.
 
