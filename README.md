@@ -33,3 +33,4 @@ The chat window is hidden from screenshots, screen recording, and screen sharing
 - [x] Add doc viewer
 - [ ] Add calendar and meeting creator
 - [ ] Add small menu bar to manage chat/resources
+- [x] Add interface translation  
