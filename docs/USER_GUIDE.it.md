@@ -126,6 +126,18 @@ Una **sessione** è il periodo in cui Elyvo ascolta attivamente e mantiene il co
 
 Premi **Chiedi a Elyvo** (`Ctrl+Enter`) e Elyvo risponderà utilizzando come contesto ciò che è attualmente sul tuo schermo e l'audio/trascrizione recenti — utile per "riassumi quello che è appena stato detto", "cos'è questo errore" oppure "scrivi una bozza di risposta a questo". Puoi anche digitare un messaggio normale nella casella della chat in qualsiasi momento.
 
+### Azioni rapide
+
+Durante una sessione la chat offre cinque azioni a un clic. Sono **consapevoli del ruolo**: ognuna prende significato dalla situazione e dall'obiettivo della modalità attiva, quindi lo stesso pulsante aiuta in modo diverso a seconda che tu stia rispondendo, valutando, negoziando o imparando.
+
+- **Assist** — la sostanza che il momento richiede: la risposta a ciò che ti è appena stato chiesto; una risposta di riferimento o una valutazione rapida quando a valutare sei *tu*; la soluzione completa quando lo screenshot contiene un esercizio. È materiale su cui ragionare, non parole da dire ad alta voce.
+- **What should I say?** — la prossima frase da dire ad alta voce, con la tua voce, pronta così com'è.
+- **Follow-up questions** — un insieme di 3–4 domande da porre subito dopo per far avanzare il tuo obiettivo: un menu tra cui scegliere, non una singola battuta.
+- **What did they mean?** — decodifica l'ultimo intervento dell'altra parte: il punto, l'intenzione e ogni preoccupazione implicita non detta.
+- **Recap** — fino a tre punti su cosa è cambiato, è stato deciso o chiesto dall'ultima volta che hai fatto il punto.
+
+Come funziona la rotazione: in una modalità da candidato, Assist risponde alla domanda rivolta a te; in una modalità da valutatore ti dà la risposta di riferimento con cui giudicare ciò che senti; in una modalità di negoziazione le Follow-up questions diventano domande esplorative. In una modalità lezione o webinar, dove per lo più ascolti, Assist spiega in termini più semplici il punto appena esposto, le Follow-up questions diventano domande per il relatore o verifiche della tua comprensione, e Recap ti rimette in pari dopo una distrazione. A guidare tutto è il prompt di sistema della modalità attiva — i pulsanti restano gli stessi (vedi **Modalità AI** più sotto).
+
 ### Modalità AI
 
 Le **Modalità** ti permettono di personalizzare il comportamento dell'assistente in base alla situazione. Ogni modalità ha un proprio prompt di sistema e un modello di note opzionale. Gestiscile in **Modalità**:

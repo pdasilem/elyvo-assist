@@ -126,6 +126,18 @@ A **session** is when Elyvo is actively listening and keeping context. Start or 
 
 Press **Ask Elyvo** (`Ctrl+Enter`) and Elyvo answers using what's currently on your screen and the recent audio/transcript as context — useful for "summarize what was just said", "what's this error", or "draft a reply to this". You can also type a normal message into the chat box at any time.
 
+### Quick actions
+
+During a session the chat offers five one-click actions. They are **role-aware**: each takes its meaning from the active mode's situation and goal, so the same button helps differently depending on whether you are answering, assessing, negotiating, or learning.
+
+- **Assist** — the substance the moment calls for: the answer to what you were just asked; a reference answer or a quick evaluation when *you* are the one assessing; the complete solution when the screenshot holds a task. It is material for you to think with, not words to say aloud.
+- **What should I say?** — the single next thing to say out loud, in your voice, ready to speak as-is.
+- **Follow-up questions** — a set of 3–4 questions you could ask next to move your goal forward: a menu to choose from, not one line.
+- **What did they mean?** — decodes the other side's last remark: their point, their intent, and any concern they implied but did not say.
+- **Recap** — up to three bullets on what changed, was decided, or was asked since you last checked in.
+
+How the rotation works: in a candidate-style mode Assist answers the question directed at you; in an assessor-style mode it hands you the reference answer to judge a reply against; in a negotiation-style mode Follow-up questions become discovery probes. In a lecture or webinar mode, where you mostly listen, Assist explains the point that was just made in plainer terms, Follow-up questions turn into questions for the speaker or checks on your own understanding, and Recap catches you up after a distraction. The active mode's system prompt steers this — the buttons stay the same (see **AI Modes** below).
+
 ### AI Modes
 
 **Modes** let you tailor how the assistant behaves for different situations. Each mode has its own system prompt and an optional notes template. Manage them under **Modes**:

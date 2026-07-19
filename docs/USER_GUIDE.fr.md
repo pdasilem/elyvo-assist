@@ -126,6 +126,18 @@ Une **session** correspond au moment où Elyvo écoute activement et conserve le
 
 Appuyez sur **Interroger Elyvo** (`Ctrl+Entrée`) et Elyvo répond en utilisant ce qui est actuellement à l'écran ainsi que l'audio/la transcription récents comme contexte — utile pour « résumer ce qui vient d'être dit », « qu'est-ce que cette erreur », ou « rédiger une réponse à ceci ». Vous pouvez également taper un message normal dans la zone de chat à tout moment.
 
+### Actions rapides
+
+Pendant une session, le chat propose cinq actions en un clic. Elles sont **sensibles au rôle** : chacune tire son sens de la situation et de l'objectif du mode actif, si bien que le même bouton aide différemment selon que vous répondez, évaluez, négociez ou apprenez.
+
+- **Assist** — la substance qu'exige l'instant : la réponse à ce qu'on vient de vous demander ; une réponse de référence ou une évaluation rapide quand c'est *vous* qui évaluez ; la solution complète quand la capture d'écran contient un exercice. C'est de la matière pour réfléchir, pas des mots à prononcer.
+- **What should I say?** — la prochaine phrase à dire à voix haute, dans votre voix, prête à l'emploi.
+- **Follow-up questions** — un ensemble de 3–4 questions à poser ensuite pour faire avancer votre objectif : un menu où choisir, pas une seule réplique.
+- **What did they mean?** — décode la dernière intervention de l'autre partie : son propos, son intention et toute préoccupation implicite non exprimée.
+- **Recap** — jusqu'à trois puces sur ce qui a changé, été décidé ou demandé depuis votre dernier point.
+
+Comment fonctionne la rotation : dans un mode candidat, Assist répond à la question qui vous est adressée ; dans un mode évaluateur, il vous fournit la réponse de référence pour juger ce que vous entendez ; dans un mode négociation, Follow-up questions deviennent des questions d'exploration. Dans un mode cours ou webinaire, où vous écoutez surtout, Assist reformule plus simplement le point qui vient d'être exposé, Follow-up questions deviennent des questions pour l'intervenant ou des vérifications de votre compréhension, et Recap vous remet à niveau après une distraction. Tout cela est piloté par le prompt système du mode actif — les boutons, eux, ne changent pas (voir **Modes IA** ci-dessous).
+
 ### Modes IA
 
 Les **Modes** vous permettent d'adapter le comportement de l'assistant selon les situations. Chaque mode dispose de son propre prompt système et d'un modèle de notes optionnel. Gérez-les sous **Modes** :

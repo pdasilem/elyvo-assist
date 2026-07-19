@@ -126,6 +126,18 @@ Eine **Sitzung** ist der Zeitraum, in dem Elyvo aktiv zuhört und den Kontext be
 
 Drücke **Elyvo fragen** (`Ctrl+Enter`), und Elyvo antwortet anhand dessen, was gerade auf deinem Bildschirm zu sehen ist, sowie des jüngsten Audios/Transkripts als Kontext — nützlich für „Fasse zusammen, was gerade gesagt wurde", „Was bedeutet dieser Fehler" oder „Entwirf eine Antwort darauf". Du kannst jederzeit auch eine normale Nachricht in das Chat-Feld eingeben.
 
+### Schnellaktionen
+
+Während einer Sitzung bietet der Chat fünf Ein-Klick-Aktionen. Sie sind **rollenbewusst**: Jede bezieht ihre Bedeutung aus Situation und Ziel des aktiven Modus — dieselbe Schaltfläche hilft also anders, je nachdem, ob du antwortest, bewertest, verhandelst oder lernst.
+
+- **Assist** — die Substanz, die der Moment verlangt: die Antwort auf das, was dich gerade gefragt wurde; eine Referenzantwort oder eine schnelle Einschätzung, wenn *du* bewertest; die vollständige Lösung, wenn der Screenshot eine Aufgabe enthält. Material zum Denken, keine Worte zum Aussprechen.
+- **What should I say?** — der eine nächste Satz, den du laut sagen solltest, in deiner Stimme, direkt verwendbar.
+- **Follow-up questions** — ein Satz von 3–4 Fragen, die du als Nächstes stellen könntest, um dein Ziel voranzubringen: ein Menü zur Auswahl, nicht eine einzelne Zeile.
+- **What did they mean?** — entschlüsselt die letzte Äußerung der Gegenseite: ihre Aussage, ihre Absicht und unausgesprochene Bedenken.
+- **Recap** — bis zu drei Stichpunkte dazu, was sich seit deinem letzten Blick geändert hat, entschieden oder gefragt wurde.
+
+So funktioniert die Rotation: In einem Kandidaten-Modus beantwortet Assist die an dich gerichtete Frage; in einem Prüfer-Modus liefert es die Referenzantwort, an der du eine Antwort messen kannst; in einem Verhandlungs-Modus werden Follow-up questions zu Sondierungsfragen. In einem Vorlesungs- oder Webinar-Modus, in dem du hauptsächlich zuhörst, erklärt Assist den gerade gemachten Punkt einfacher, Follow-up questions werden zu Fragen an den Vortragenden oder zu Verständnischecks, und Recap bringt dich nach einer Ablenkung wieder auf Stand. Gesteuert wird das vom Systemprompt des aktiven Modus — die Schaltflächen bleiben dieselben (siehe **KI-Modi** unten).
+
 ### KI-Modi
 
 Mit **Modi** kannst du das Verhalten des Assistenten für verschiedene Situationen anpassen. Jeder Modus hat seinen eigenen System-Prompt und optional eine Notizvorlage. Verwalte sie unter **Modi**:
