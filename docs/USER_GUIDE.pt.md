@@ -192,7 +192,7 @@ A sobreposição é deliberadamente invisível à captura, para que a possa usar
 
 - **Windows 11** — oculta de todos os tipos de captura por predefinição.
 - **Windows 10** — mesma proteção, mas **não garantida**: uma limitação conhecida do sistema operativo pode mostrar a sobreposição como um retângulo preto na captura, em vez de a ocultar corretamente.
-- **Linux (KDE / KWin)** — oculta na *gravação e partilha* de ecrã por predefinição; ocultá-la em *capturas de ecrã* estáticas (Spectacle/PrintScreen) requer um patch pontual do KWin, que deve ser reaplicado após atualizações do KWin.
+- **Linux (KDE / KWin)** — oculta na *gravação e partilha* de ecrã por predefinição. No **KWin 6.7.0+ (Plasma 6.7+)** as *capturas de ecrã* estáticas também ficam ocultas por predefinição — não é necessário patch. Em KWin mais antigos (≤ 6.6.x), ocultá-la em *capturas de ecrã* estáticas (Spectacle/PrintScreen) requer um patch pontual do KWin, que deve ser reaplicado após atualizações do KWin.
 - **macOS** — utiliza o mesmo mecanismo nativo de proteção de conteúdo. Fiável no **macOS 14 e anteriores**; no **macOS 15 e posteriores** a não deteção **não é garantida** e a sobreposição pode aparecer nas capturas.
 
 ---
@@ -221,7 +221,7 @@ Para atualizar, descarregue o instalador mais recente para a sua plataforma a pa
 - **Debian / Ubuntu:** `sudo apt install ./elyvo-assist-<nova-versão>-linux-x86_64.deb`.
 - **Windows / macOS:** execute o novo instalador / abra o novo DMG.
 
-> Utilizadores de Linux KDE: reaplique o patch de captura de ecrã do KWin após uma atualização do sistema KWin, caso dependa da proteção contra capturas de ecrã.
+> Utilizadores de Linux KDE com KWin anterior à 6.7.0: reaplique o patch de captura de ecrã do KWin após uma atualização do sistema KWin, caso dependa da proteção contra capturas de ecrã. Se a atualização o levar ao KWin 6.7.0 ou mais recente, o patch deixa de ser necessário — a proteção está integrada.
 
 ---
 
@@ -240,7 +240,7 @@ Para atualizar, descarregue o instalador mais recente para a sua plataforma a pa
 
 **Não é captado áudio.** Verifique o acesso ao microfone e à captura de ecrã nas definições de privacidade do seu sistema operativo e, em seguida, utilize o teste de microfone/áudio do sistema em **Definições → Geral** para confirmar os níveis. O Elyvo utiliza o dispositivo de entrada predefinido do seu sistema, pelo que deve definir o predefinido correto nas definições de som do seu sistema operativo. No Linux, confirme que o PipeWire está em execução.
 
-**A sobreposição continua a aparecer em capturas de ecrã no Linux.** A *gravação/partilha* de ecrã está oculta por predefinição; as capturas de ecrã estáticas requerem o patch pontual do KWin descrito no [README](../README.md#window-protection-from-screen-sharing). Reaplique-o após atualizações do KWin.
+**A sobreposição continua a aparecer em capturas de ecrã no Linux.** A *gravação/partilha* de ecrã está oculta por predefinição. No KWin 6.7.0+ (Plasma 6.7+) as capturas de ecrã ficam ocultas por predefinição; em KWin mais antigos, as capturas de ecrã estáticas requerem o patch pontual do KWin descrito no [README](../README.md#window-protection-from-screen-sharing) — reaplique-o após atualizações do KWin.
 
 **Problemas ao iniciar sessão.** Experimente o método alternativo (email/palavra-passe versus Google) e certifique-se de que o relógio do seu sistema está correto — a validação OAuth e de tokens é sensível ao tempo.
 

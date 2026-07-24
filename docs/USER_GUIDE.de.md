@@ -192,7 +192,7 @@ Das Overlay ist bewusst für Aufnahmen unsichtbar, sodass du es während eines g
 
 - **Windows 11** — standardmäßig vor allen Aufnahmearten verborgen.
 - **Windows 10** — derselbe Schutz, aber **nicht garantiert**: Eine bekannte Einschränkung des Betriebssystems kann dazu führen, dass das Overlay in der Aufnahme als schwarzes Rechteck erscheint, statt sauber verborgen zu werden.
-- **Linux (KDE / KWin)** — standardmäßig vor Bildschirm*aufnahme und -freigabe* verborgen; um es auch vor statischen *Screenshots* (Spectacle/PrintScreen) zu verbergen, ist einmalig ein KWin-Patch nötig, der nach KWin-Updates erneut angewendet werden muss.
+- **Linux (KDE / KWin)** — standardmäßig vor Bildschirm*aufnahme und -freigabe* verborgen. Auf **KWin 6.7.0+ (Plasma 6.7+)** sind auch statische *Screenshots* standardmäßig verborgen — kein Patch nötig. Auf älterem KWin (≤ 6.6.x) ist, um es vor statischen *Screenshots* (Spectacle/PrintScreen) zu verbergen, einmalig ein KWin-Patch nötig, der nach KWin-Updates erneut angewendet werden muss.
 - **macOS** — verwendet denselben nativen Inhaltsschutzmechanismus. Zuverlässig auf **macOS 14 und früher**; auf **macOS 15 und neuer** ist die Unerkennbarkeit **nicht garantiert**, und das Overlay kann in Aufnahmen erscheinen.
 
 ---
@@ -221,7 +221,7 @@ Lade zum Aktualisieren das neueste Installationsprogramm für deine Plattform vo
 - **Debian / Ubuntu:** `sudo apt install ./elyvo-assist-<neue-version>-linux-x86_64.deb`.
 - **Windows / macOS:** Führe das neue Installationsprogramm aus / öffne die neue DMG-Datei.
 
-> Linux-KDE-Nutzer: Wende den KWin-Screenshot-Patch nach einem KWin-Systemupdate erneut an, falls du auf den Screenshot-Schutz angewiesen bist.
+> Linux-KDE-Nutzer mit KWin älter als 6.7.0: Wende den KWin-Screenshot-Patch nach einem KWin-Systemupdate erneut an, falls du auf den Screenshot-Schutz angewiesen bist. Bringt dich das Update auf KWin 6.7.0 oder neuer, ist der Patch nicht mehr nötig — der Schutz ist eingebaut.
 
 ---
 
@@ -240,7 +240,7 @@ Lade zum Aktualisieren das neueste Installationsprogramm für deine Plattform vo
 
 **Es wird kein Audio aufgenommen.** Prüfe den Zugriff auf Mikrofon und Bildschirmaufnahme in den Datenschutzeinstellungen deines Betriebssystems, und verwende dann den Mikrofon- / Systemton-Test unter **Einstellungen → Allgemein**, um die Pegel zu bestätigen. Elyvo verwendet das Standard-Eingabegerät deines Systems, stelle also das richtige Standardgerät in den Sound-Einstellungen deines Betriebssystems ein. Vergewissere dich unter Linux, dass PipeWire läuft.
 
-**Das Overlay wird unter Linux weiterhin in Screenshots angezeigt.** Bildschirm*aufnahme/-freigabe* wird standardmäßig verborgen; statische Screenshots erfordern den einmaligen KWin-Patch, der im [README](../README.md#window-protection-from-screen-sharing) beschrieben ist. Wende ihn nach KWin-Updates erneut an.
+**Das Overlay wird unter Linux weiterhin in Screenshots angezeigt.** Bildschirm*aufnahme/-freigabe* wird standardmäßig verborgen. Auf KWin 6.7.0+ (Plasma 6.7+) sind Screenshots standardmäßig verborgen; auf älterem KWin erfordern statische Screenshots den einmaligen KWin-Patch, der im [README](../README.md#window-protection-from-screen-sharing) beschrieben ist — wende ihn nach KWin-Updates erneut an.
 
 **Anmeldeprobleme.** Versuche die alternative Methode (E-Mail/Passwort statt Google oder umgekehrt) und stelle sicher, dass deine Systemuhr korrekt eingestellt ist — OAuth und die Token-Validierung sind zeitkritisch.
 

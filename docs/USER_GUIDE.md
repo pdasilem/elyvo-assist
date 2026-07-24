@@ -192,7 +192,7 @@ The overlay is deliberately invisible to capture so you can use it during a shar
 
 - **Windows 11** — hidden from all capture types out of the box.
 - **Windows 10** — same protection, but **not guaranteed**: a known OS limitation can show the overlay as a black rectangle in the capture instead of hiding it cleanly.
-- **Linux (KDE / KWin)** — hidden from screen *recording and sharing* out of the box; hiding it from static *screenshots* (Spectacle/PrintScreen) needs a one-time KWin patch, re-applied after KWin updates.
+- **Linux (KDE / KWin)** — hidden from screen *recording and sharing* out of the box. On **KWin 6.7.0+ (Plasma 6.7+)** static *screenshots* are also hidden out of the box — no patch needed. On older KWin (≤ 6.6.x), hiding it from static *screenshots* (Spectacle/PrintScreen) needs a one-time KWin patch, re-applied after KWin updates.
 - **macOS** — uses the same native content-protection mechanism. Reliable on **macOS 14 and earlier**; on **macOS 15 and later** undetectability is **not guaranteed** and the overlay may appear in captures.
 
 ---
@@ -221,7 +221,7 @@ To update, download the newest installer for your platform from [Releases](https
 - **Debian / Ubuntu:** `sudo apt install ./elyvo-assist-<new-version>-linux-x86_64.deb`.
 - **Windows / macOS:** run the new installer / open the new DMG.
 
-> Linux KDE users: re-apply the KWin screenshot patch after a KWin system update if you rely on screenshot protection.
+> Linux KDE users on KWin older than 6.7.0: re-apply the KWin screenshot patch after a KWin system update if you rely on screenshot protection. If the update brings you to KWin 6.7.0 or newer, the patch is no longer needed — protection is built in.
 
 ---
 
@@ -240,7 +240,7 @@ To update, download the newest installer for your platform from [Releases](https
 
 **No audio is captured.** Confirm microphone and screen-capture access in your OS privacy settings, then use the microphone / system-audio test in **Settings → General** to confirm levels. Elyvo uses your system's default input device, so set the right default in your OS sound settings. On Linux, confirm PipeWire is running.
 
-**The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default; static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing). Re-apply it after KWin updates.
+**The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default. On KWin 6.7.0+ (Plasma 6.7+) screenshots are hidden out of the box; on older KWin, static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing) — re-apply it after KWin updates.
 
 **Sign-in problems.** Try the alternate method (email/password vs. Google), and make sure your system clock is correct — OAuth and token validation are time-sensitive.
 

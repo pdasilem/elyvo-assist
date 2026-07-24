@@ -192,7 +192,7 @@ La superposition est délibérément invisible à la capture afin que vous puiss
 
 - **Windows 11** — masquée de tous les types de capture dès l'installation.
 - **Windows 10** — même protection, mais **non garantie** : une limitation connue du système d'exploitation peut afficher la superposition sous forme de rectangle noir dans la capture au lieu de la masquer proprement.
-- **Linux (KDE / KWin)** — masquée de l'*enregistrement et du partage* d'écran dès l'installation ; la masquer des *captures d'écran* statiques (Spectacle/PrintScreen) nécessite un correctif KWin ponctuel, à réappliquer après chaque mise à jour de KWin.
+- **Linux (KDE / KWin)** — masquée de l'*enregistrement et du partage* d'écran dès l'installation. Sur **KWin 6.7.0+ (Plasma 6.7+)**, les *captures d'écran* statiques sont également masquées d'office — aucun correctif nécessaire. Sur les KWin plus anciens (≤ 6.6.x), la masquer des *captures d'écran* statiques (Spectacle/PrintScreen) nécessite un correctif KWin ponctuel, à réappliquer après chaque mise à jour de KWin.
 - **macOS** — utilise le même mécanisme natif de protection du contenu. Fiable sur **macOS 14 et versions antérieures** ; sur **macOS 15 et versions ultérieures**, la non-détectabilité n'est **pas garantie** et la superposition peut apparaître dans les captures.
 
 ---
@@ -221,7 +221,7 @@ Pour mettre à jour, téléchargez le dernier installateur pour votre plateforme
 - **Debian / Ubuntu :** `sudo apt install ./elyvo-assist-<nouvelle-version>-linux-x86_64.deb`.
 - **Windows / macOS :** exécutez le nouvel installateur / ouvrez le nouveau DMG.
 
-> Utilisateurs Linux KDE : réappliquez le correctif KWin pour les captures d'écran après une mise à jour système de KWin si vous comptez sur la protection des captures d'écran.
+> Utilisateurs Linux KDE avec un KWin antérieur à 6.7.0 : réappliquez le correctif KWin pour les captures d'écran après une mise à jour système de KWin si vous comptez sur la protection des captures d'écran. Si la mise à jour vous amène à KWin 6.7.0 ou plus récent, le correctif n'est plus nécessaire — la protection est intégrée.
 
 ---
 
@@ -240,7 +240,7 @@ Pour mettre à jour, téléchargez le dernier installateur pour votre plateforme
 
 **Aucun audio n'est capturé.** Vérifiez l'accès au microphone et à la capture d'écran dans les paramètres de confidentialité de votre système d'exploitation, puis utilisez le test du microphone / de l'audio système dans **Paramètres → Général** pour confirmer les niveaux. Elyvo utilise le périphérique d'entrée par défaut de votre système, définissez donc le bon périphérique par défaut dans les paramètres audio de votre système d'exploitation. Sur Linux, vérifiez que PipeWire est en cours d'exécution.
 
-**La superposition apparaît toujours dans les captures d'écran sous Linux.** L'*enregistrement/le partage* d'écran est masqué par défaut ; les captures d'écran statiques nécessitent le correctif KWin ponctuel décrit dans le [README](../README.md#window-protection-from-screen-sharing). Réappliquez-le après les mises à jour de KWin.
+**La superposition apparaît toujours dans les captures d'écran sous Linux.** L'*enregistrement/le partage* d'écran est masqué par défaut. Sur KWin 6.7.0+ (Plasma 6.7+), les captures d'écran sont masquées d'office ; sur les KWin plus anciens, les captures d'écran statiques nécessitent le correctif KWin ponctuel décrit dans le [README](../README.md#window-protection-from-screen-sharing) — réappliquez-le après les mises à jour de KWin.
 
 **Problèmes de connexion.** Essayez la méthode alternative (e-mail/mot de passe plutôt que Google), et assurez-vous que l'horloge de votre système est correcte — la validation OAuth et des jetons est sensible au temps.
 
