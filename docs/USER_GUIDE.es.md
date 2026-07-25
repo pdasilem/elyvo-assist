@@ -26,8 +26,7 @@ Cada versión contiene, para la versión `X.Y.Z`:
 
 | Plataforma | Archivo |
 |----------|------|
-| Windows (recomendado) | `elyvo-assist-X.Y.Z-windows-x64-setup.exe` |
-| Windows (MSI) | `elyvo-assist-X.Y.Z-windows-x64.msi` |
+| Windows | `elyvo-assist-X.Y.Z-windows-x64-setup.exe` |
 | macOS (Intel) | `elyvo-assist-X.Y.Z-macos-x64.dmg` |
 | macOS (Apple Silicon) | `elyvo-assist-X.Y.Z-macos-arm64.dmg` |
 | Debian / Ubuntu | `elyvo-assist-X.Y.Z-linux-x86_64.deb` |
@@ -35,7 +34,7 @@ Cada versión contiene, para la versión `X.Y.Z`:
 
 ### Windows
 
-1. Descarga el instalador `...-setup.exe` (NSIS), o el `.msi` si tu organización prefiere la implementación mediante MSI.
+1. Descarga el instalador `...-setup.exe` (NSIS).
 2. Ejecútalo y sigue las indicaciones. La aplicación se instala en `Program Files\Elyvo Assist`.
 3. Inicia **Elyvo Assist** desde el menú Inicio.
 

@@ -26,8 +26,7 @@ Elyvo Assist — це десктопний ІІ-асистент для зуст
 
 | Платформа | Файл |
 |-----------|------|
-| Windows (рекомендовано) | `elyvo-assist-X.Y.Z-windows-x64-setup.exe` |
-| Windows (MSI) | `elyvo-assist-X.Y.Z-windows-x64.msi` |
+| Windows | `elyvo-assist-X.Y.Z-windows-x64-setup.exe` |
 | macOS (Intel) | `elyvo-assist-X.Y.Z-macos-x64.dmg` |
 | macOS (Apple Silicon) | `elyvo-assist-X.Y.Z-macos-arm64.dmg` |
 | Debian / Ubuntu | `elyvo-assist-X.Y.Z-linux-x86_64.deb` |
@@ -35,7 +34,7 @@ Elyvo Assist — це десктопний ІІ-асистент для зуст
 
 ### Windows
 
-1. Завантажте інсталятор `...-setup.exe` (NSIS) — або `.msi`, якщо у вашій організації надають перевагу розгортанню через MSI.
+1. Завантажте інсталятор `...-setup.exe` (NSIS).
 2. Запустіть його і дотримуйтесь підказок. Застосунок встановлюється в `Program Files\Elyvo Assist`.
 3. Запустіть **Elyvo Assist** з меню «Пуск».
 
