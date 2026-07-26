@@ -150,22 +150,36 @@ Os **Modos** permitem-lhe adaptar o comportamento do assistente a diferentes sit
 
 O chat ambiente é um chat leve e sempre disponível que o acompanha em toda a aplicação e pode ser delimitado a um projeto. Faz parte do plano pago (consulte **Definições → Faturação**).
 
+### O que o seu plano inclui
+
+O Elyvo funciona em qualquer plano; uma subscrição alargada aumenta os limites e desbloqueia o trabalho em conjunto. Em traços gerais, um plano superior dá-lhe:
+
+- sessões mais longas e mais frequentes;
+- margem para mais projetos e mais documentos;
+- a possibilidade de partilhar um projeto com outras pessoas — aceitar um convite e trabalhar no projeto de outra pessoa é possível em qualquer plano;
+- utilizar a aplicação em mais do que um dispositivo ao mesmo tempo;
+- a autoaprendizagem do assistente, para que melhore com as suas sessões.
+
+O que o seu plano atual inclui e como o alterar está em **Definições → Faturação**. Onde existe um limite, a aplicação avisa-o no momento em que o atinge, em vez de falhar em silêncio.
+
 ### Projetos
 
 Os **Projetos** agrupam sessões relacionadas e dão ao assistente um contexto partilhado e persistente. Dentro de um projeto pode gerir:
 
-- **Membros** — veja quem está no projeto e convide outras pessoas por email (cada convidado aparece como *pendente* até aceitar).
+- **Membros** — veja quem está no projeto e convide outras pessoas por email (cada convidado aparece como *pendente* até aceitar). Enviar convites exige um plano que inclua a partilha; aceitar um convite e trabalhar no projeto de outra pessoa, não.
 - **Memória** — factos e contexto que o assistente deve recordar entre sessões nesse projeto.
 - **Regras** — orientações que o assistente segue nesse projeto.
 - **Definições** — um **modo**, um **idioma de resposta** e um **idioma de transcrição** por projeto, além de **Enriquecer contexto** — um interruptor (desativado por predefinição) que permite ao assistente obter contexto relevante das suas *outras* sessões no mesmo projeto (recuperação entre sessões).
 
 Quando alguém o convida para o projeto dele, o convite aparece no topo de **Projetos** com botões **Aceitar** / **Rejeitar**. O chat ambiente pode ser delimitado a um projeto, de modo a que as respostas se baseiem na memória e nas regras desse projeto.
 
+Se o plano do proprietário deixar de incluir a partilha, o projeto partilhado fica **apenas de leitura** para todos até que os seus membros sejam removidos. Nada é eliminado, e o acesso total regressa assim que o projeto deixa de estar partilhado — ou o plano volta a incluir a partilha.
+
 ### Documentos
 
 O Elyvo pode manter uma biblioteca pessoal de documentos de referência que pode abrir como a sua própria sobreposição enquanto trabalha — útil para ter notas, um briefing ou uma checklist à mão durante uma chamada.
 
-- **Gerir os seus documentos.** Em **Definições → Recursos**, adicione ficheiros Markdown (`.md`) — até **1 MB** cada — em *Os seus documentos*, ou elimine os que já não precisa. Os documentos são privados à sua conta.
+- **Gerir os seus documentos.** Em **Definições → Recursos**, adicione ficheiros Markdown (`.md`) — até **1 MB** cada — em *Os seus documentos*, ou elimine os que já não precisa. Os documentos são privados à sua conta. Quantos documentos pode manter depende do seu plano.
 - **Ativar por projeto.** No projeto ativo, assinale os documentos que quer ter à mão. Os documentos ativados **abrem automaticamente como separadores** no visualizador de Documentos sempre que o abrir para esse projeto. Ativar um documento controla o que o visualizador mostra para esse projeto; não introduz o conteúdo do ficheiro nas respostas do assistente.
 - **Abrir o visualizador.** No menu de sessão da sobreposição de chat (o botão `···`), escolha **Documentos**. Abre-se como uma janela própria, arrastável, que, tal como a sobreposição principal, está **oculta na partilha e na gravação de ecrã**. O mesmo item de menu alterna o seu fecho.
 - **Ler e alternar.** Cada documento abre no seu próprio separador. Utilize o separador **+** para abrir qualquer um dos seus documentos, clique num separador para mudar e em **×** para o fechar. O conteúdo é apresentado como Markdown formatado e segue o tema e o tamanho de letra do seu chat.
@@ -176,7 +190,7 @@ Ligue o **Google Calendar** (em **Definições → Geral**) para ver as suas pr�
 
 ### Dashboard e histórico
 
-O **Dashboard** é a sua base principal: lista as sessões anteriores numa lista pesquisável e agrupada por data (o campo de pesquisa está no cabeçalho da aplicação) e permite abrir o detalhe de uma sessão, que tem três separadores — **Resumo** (o resumo da reunião), **Transcrição** (a transcrição captada) e **Utilização** (as perguntas que fez ao Elyvo durante a sessão e as respectivas respostas). Utilize-o para rever ou fazer o acompanhamento depois de uma reunião.
+O **Dashboard** é a sua base principal: lista as sessões anteriores numa lista pesquisável e agrupada por data (o campo de pesquisa está no cabeçalho da aplicação) e permite abrir o detalhe de uma sessão, que tem três separadores — **Resumo** (o resumo da reunião), **Transcrição** (a transcrição captada) e **Utilização** (as perguntas que fez ao Elyvo durante a sessão e as respectivas respostas). Utilize-o para rever ou fazer o acompanhamento depois de uma reunião. No separador **Resumo**, o botão de copiar copia o resumo completo de uma só vez.
 
 ### Memória e autoaprendizagem
 
@@ -184,6 +198,8 @@ O Elyvo melhora com o uso. No seu **Perfil** pode rever e editar:
 
 - **Memória do utilizador** — factos duradouros sobre si e as suas preferências que o assistente aplica em todo o lado.
 - **Desambiguações** — esclarecimentos que o assistente aprendeu (por exemplo, a que "John" ou a que projeto se refere) para deixar de adivinhar de forma errada.
+
+A autoaprendizagem depende do seu plano. Sem ela, o assistente continua a usar tudo o que adicionar — apenas deixa de recolher novos factos por iniciativa própria.
 
 ### Proteção da janela na partilha de ecrã
 
@@ -203,10 +219,10 @@ Abra as Definições a partir do menu do utilizador. Os separadores são:
 - **Geral** — preferências principais, o dispositivo de entrada de áudio detetado e os medidores de teste de microfone/áudio do sistema, ligação ao Google Calendar, opções de captura de ecrã e **Verificar atualizações**.
 - **Atalhos de teclado** — ver e redefinir todos os atalhos.
 - **Perfil** — as suas respostas da integração inicial, memória do utilizador e desambiguações.
-- **Segurança** — opções de segurança da conta.
+- **Segurança** — opções de segurança da conta, incluindo os dispositivos com sessão iniciada. Em planos limitados a um único dispositivo, iniciar sessão noutro local termina a sessão aqui.
 - **Idioma** — idioma da interface / das respostas.
 - **Recursos** — carregue e faça a gestão dos seus documentos Markdown, e escolha quais estão ativados para o projeto ativo (consulte [Documentos](#documentos)).
-- **Faturação** — a sua subscrição e plano (controla o acesso a funcionalidades pagas, como o chat de IA ambiente).
+- **Faturação** — a sua subscrição e plano: o que inclui e como alterá-lo. O plano controla o acesso a funcionalidades pagas como o chat de IA ambiente, a partilha e os limites de projetos e documentos.
 
 ---
 
@@ -242,5 +258,7 @@ Para atualizar, descarregue o instalador mais recente para a sua plataforma a pa
 **A sobreposição continua a aparecer em capturas de ecrã no Linux.** A *gravação/partilha* de ecrã está oculta por predefinição. No KWin 6.7.0+ (Plasma 6.7+) as capturas de ecrã ficam ocultas por predefinição; em KWin mais antigos, as capturas de ecrã estáticas requerem o patch pontual do KWin descrito no [README](../README.md#window-protection-from-screen-sharing) — reaplique-o após atualizações do KWin.
 
 **Problemas ao iniciar sessão.** Experimente o método alternativo (email/palavra-passe versus Google) e certifique-se de que o relógio do seu sistema está correto — a validação OAuth e de tokens é sensível ao tempo.
+
+**A sua sessão terminou inesperadamente.** Em planos limitados a um único dispositivo, iniciar sessão noutro dispositivo termina a sessão aqui — basta iniciar sessão novamente para continuar. Pode rever os dispositivos da sua conta em **Definições → Segurança**.
 
 Para qualquer outra questão, abra uma issue no [repositório de releases](https://github.com/pdasilem/elyvo-assist/issues).

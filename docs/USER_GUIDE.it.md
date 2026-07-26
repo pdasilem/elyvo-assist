@@ -150,22 +150,36 @@ Le **Modalità** ti permettono di personalizzare il comportamento dell'assistent
 
 La chat ambientale è una chat leggera, sempre disponibile, che ti segue in tutta l'app e può essere associata a un progetto specifico. Fa parte del piano a pagamento (vedi **Impostazioni → Fatturazione**).
 
+### Cosa include il tuo piano
+
+Elyvo funziona con qualsiasi piano; un abbonamento esteso alza i limiti e sblocca il lavoro condiviso. In generale, un piano superiore offre:
+
+- sessioni più lunghe e più frequenti;
+- spazio per più progetti e più documenti;
+- la possibilità di condividere un progetto con altre persone — accettare un invito e lavorare nel progetto di qualcun altro è sempre possibile, con qualsiasi piano;
+- l'uso dell'app su più di un dispositivo alla volta;
+- l'apprendimento autonomo dell'assistente, così migliora grazie alle tue sessioni.
+
+Cosa include il tuo piano attuale e come cambiarlo si trova in **Impostazioni → Fatturazione**. Dove si applica un limite, l'app te lo comunica nel momento in cui lo raggiungi invece di fallire in silenzio.
+
 ### Progetti
 
 I **Progetti** raggruppano sessioni correlate e offrono all'assistente un contesto condiviso e persistente. All'interno di un progetto puoi gestire:
 
-- **Membri** — vedi chi fa parte del progetto e invita altre persone via email (ogni invitato risulta *in sospeso* finché non accetta).
+- **Membri** — vedi chi fa parte del progetto e invita altre persone via email (ogni invitato risulta *in sospeso* finché non accetta). Inviare inviti richiede un piano che includa la condivisione; accettare un invito e lavorare nel progetto di qualcun altro no.
 - **Memoria** — fatti e contesto che l'assistente deve ricordare tra le sessioni di quel progetto.
 - **Regole** — indicazioni che l'assistente segue per quel progetto.
 - **Impostazioni** — una **modalità** per progetto, **lingua di output** e **lingua della trascrizione**, oltre ad **Arricchisci contesto** — un'opzione (disattivata per impostazione predefinita) che consente all'assistente di attingere contesto rilevante dalle tue *altre* sessioni nello stesso progetto (richiamo tra sessioni).
 
 Quando qualcuno ti invita al proprio progetto, l'invito appare in cima alla sezione **Progetti** con i pulsanti **Accetta** / **Rifiuta**. La chat ambientale può essere associata a un progetto, così le risposte attingono alla memoria e alle regole di quel progetto.
 
+Se il piano del proprietario smette di includere la condivisione, il progetto condiviso diventa di **sola lettura** per tutti finché non se ne rimuovono i membri. Non viene eliminato nulla e l'accesso completo torna non appena il progetto non è più condiviso — o il piano include di nuovo la condivisione.
+
 ### Documenti
 
 Elyvo può conservare una libreria personale di documenti di riferimento che puoi richiamare come overlay a sé stante mentre lavori — utile per tenere a portata di mano appunti, un brief o una checklist durante una chiamata.
 
-- **Gestisci i tuoi documenti.** In **Impostazioni → Risorse**, aggiungi file Markdown (`.md`) — fino a **1 MB** ciascuno — nella sezione *I tuoi documenti*, oppure elimina quelli che non ti servono più. I documenti sono privati e associati al tuo account.
+- **Gestisci i tuoi documenti.** In **Impostazioni → Risorse**, aggiungi file Markdown (`.md`) — fino a **1 MB** ciascuno — nella sezione *I tuoi documenti*, oppure elimina quelli che non ti servono più. I documenti sono privati e associati al tuo account. Quanti documenti puoi conservare dipende dal tuo piano.
 - **Attiva per progetto.** Per il progetto attivo, seleziona i documenti che vuoi avere a portata di mano. I documenti attivati si **aprono automaticamente come schede** nel visualizzatore Documenti ogni volta che lo apri per quel progetto. Attivare un documento controlla cosa mostra il visualizzatore per quel progetto; non inserisce il contenuto del file nelle risposte dell'assistente.
 - **Apri il visualizzatore.** Dal menu della sessione dell'overlay della chat (il pulsante `···`), scegli **Documenti**. Si apre come finestra trascinabile a sé stante che, come l'overlay principale, è **nascosta dalla condivisione e dalla registrazione dello schermo**. Lo stesso elemento del menu la chiude.
 - **Leggi e cambia scheda.** Ogni documento si apre nella propria scheda. Usa la scheda **+** per aprire uno qualsiasi dei tuoi documenti, fai clic su una scheda per passare da un documento all'altro e su **×** per chiuderla. Il contenuto viene visualizzato come Markdown formattato e segue il tema e la dimensione del carattere della tua chat.
@@ -176,7 +190,7 @@ Collega **Google Calendar** (da **Impostazioni → Generale**) per vedere le tue
 
 ### Dashboard e cronologia
 
-La **Dashboard** è la tua base operativa: elenca le sessioni passate in un elenco ricercabile e raggruppato per data (il campo di ricerca si trova nell'intestazione dell'app) e ti permette di aprire il dettaglio di una sessione, che ha tre schede — **Riepilogo** (il riepilogo della riunione), **Trascrizione** (la trascrizione catturata) e **Utilizzo** (le domande che hai posto a Elyvo durante la sessione e le sue risposte). Usala per rivedere o dare seguito dopo una riunione.
+La **Dashboard** è la tua base operativa: elenca le sessioni passate in un elenco ricercabile e raggruppato per data (il campo di ricerca si trova nell'intestazione dell'app) e ti permette di aprire il dettaglio di una sessione, che ha tre schede — **Riepilogo** (il riepilogo della riunione), **Trascrizione** (la trascrizione catturata) e **Utilizzo** (le domande che hai posto a Elyvo durante la sessione e le sue risposte). Usala per rivedere o dare seguito dopo una riunione. Nella scheda **Riepilogo**, il pulsante di copia copia l'intero riepilogo in una volta.
 
 ### Memoria e apprendimento autonomo
 
@@ -184,6 +198,8 @@ Elyvo migliora con l'uso. Nel tuo **Profilo** puoi rivedere e modificare:
 
 - **Memoria utente** — fatti duraturi su di te e sulle tue preferenze che l'assistente applica ovunque.
 - **Disambiguazioni** — chiarimenti che l'assistente ha appreso (ad esempio, quale "Mario" o quale progetto intendi) in modo da non indovinare più in modo errato.
+
+L'apprendimento autonomo dipende dal tuo piano. Senza di esso l'assistente continua a usare tutto ciò che aggiungi tu — smette solo di raccogliere nuovi fatti da solo.
 
 ### Protezione della finestra dalla condivisione dello schermo
 
@@ -203,10 +219,10 @@ Apri le Impostazioni dal menu utente. Le schede sono:
 - **Generale** — preferenze principali, il dispositivo di input audio rilevato e gli indicatori di test per microfono / audio di sistema, connessione a Google Calendar, opzioni di cattura schermo e **Verifica aggiornamenti**.
 - **Scorciatoie** — visualizza e riassegna ogni scorciatoia da tastiera.
 - **Profilo** — le tue risposte alla configurazione guidata, la memoria utente e le disambiguazioni.
-- **Sicurezza** — opzioni di sicurezza dell'account.
+- **Sicurezza** — opzioni di sicurezza dell'account, inclusi i dispositivi con accesso effettuato. Nei piani limitati a un solo dispositivo, l'accesso altrove disconnette questo.
 - **Lingua** — lingua dell'interfaccia / delle risposte.
 - **Risorse** — carica e gestisci i tuoi documenti Markdown, e scegli quali sono attivi per il progetto corrente (vedi [Documenti](#documenti)).
-- **Fatturazione** — il tuo abbonamento e piano (sblocca funzionalità a pagamento come la chat AI ambientale).
+- **Fatturazione** — il tuo abbonamento e piano: cosa include e come cambiarlo. Il piano sblocca funzionalità a pagamento come la chat AI ambientale, la condivisione e i limiti di progetti e documenti.
 
 ---
 
@@ -242,5 +258,7 @@ Per aggiornare, scarica il nuovo installer per la tua piattaforma da [Releases](
 **L'overlay continua a comparire negli screenshot su Linux.** La *registrazione/condivisione* dello schermo è nascosta per impostazione predefinita. Su KWin 6.7.0+ (Plasma 6.7+) gli screenshot sono nascosti fin da subito; su KWin più vecchi gli screenshot statici richiedono la patch KWin una tantum descritta nel [README](../README.md#window-protection-from-screen-sharing) — riapplicala dopo gli aggiornamenti di KWin.
 
 **Problemi di accesso.** Prova il metodo alternativo (email/password rispetto a Google) e assicurati che l'orologio di sistema sia impostato correttamente — OAuth e la validazione dei token sono sensibili al fattore tempo.
+
+**Sei stato disconnesso inaspettatamente.** Nei piani limitati a un solo dispositivo, l'accesso da un altro dispositivo disconnette questo — accedi di nuovo per continuare. Puoi rivedere i dispositivi del tuo account in **Impostazioni → Sicurezza**.
 
 Per qualsiasi altro problema, apri una issue nel [repository delle release](https://github.com/pdasilem/elyvo-assist/issues).

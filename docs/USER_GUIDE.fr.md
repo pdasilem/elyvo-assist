@@ -150,22 +150,36 @@ Les **Modes** vous permettent d'adapter le comportement de l'assistant selon les
 
 Le chat ambiant est un chat léger, toujours disponible, qui vous suit dans toute l'application et peut être limité à un projet. Il fait partie de l'offre payante (voir **Paramètres → Facturation**).
 
+### Ce que votre offre inclut
+
+Elyvo fonctionne avec toutes les offres ; un abonnement étendu relève les limites et débloque le travail à plusieurs. En résumé, une offre supérieure vous donne :
+
+- des sessions plus longues et plus fréquentes ;
+- de la marge pour plus de projets et plus de documents ;
+- la possibilité de partager un projet avec d'autres personnes — accepter une invitation et travailler dans le projet de quelqu'un d'autre reste possible avec n'importe quelle offre ;
+- l'utilisation de l'application sur plusieurs appareils à la fois ;
+- l'auto-apprentissage de l'assistant, pour qu'il progresse grâce à vos sessions.
+
+Ce que votre offre actuelle inclut et comment en changer se trouve dans **Paramètres → Facturation**. Là où une limite s'applique, l'application vous le signale au moment où vous l'atteignez plutôt que d'échouer en silence.
+
 ### Projets
 
 Les **Projets** regroupent des sessions liées et donnent à l'assistant un contexte partagé et persistant. Au sein d'un projet, vous pouvez gérer :
 
-- **Membres** — voir qui fait partie du projet et inviter d'autres personnes par e-mail (chaque invité apparaît comme *en attente* jusqu'à ce qu'il accepte).
+- **Membres** — voir qui fait partie du projet et inviter d'autres personnes par e-mail (chaque invité apparaît comme *en attente* jusqu'à ce qu'il accepte). L'envoi d'invitations nécessite une offre incluant le partage ; accepter une invitation et travailler dans le projet d'une autre personne, non.
 - **Mémoire** — des faits et du contexte que l'assistant doit retenir d'une session à l'autre dans ce projet.
 - **Règles** — des consignes que l'assistant suit pour ce projet.
 - **Paramètres** — un **mode**, une **langue de sortie** et une **langue de transcription** par projet, ainsi que **Enrichir le contexte** — un bouton (désactivé par défaut) qui permet à l'assistant de puiser du contexte pertinent dans vos *autres* sessions du même projet (rappel inter-sessions).
 
 Lorsque quelqu'un vous invite à rejoindre son projet, l'invitation apparaît en haut de **Projets** avec des boutons **Accepter** / **Refuser**. Le chat ambiant peut être limité à un projet afin que les réponses s'appuient sur la mémoire et les règles de ce projet.
 
+Si l'offre du propriétaire cesse d'inclure le partage, le projet partagé devient **en lecture seule** pour tout le monde jusqu'à ce que ses membres soient retirés. Rien n'est supprimé, et l'accès complet revient dès que le projet n'est plus partagé — ou que l'offre inclut de nouveau le partage.
+
 ### Documents
 
 Elyvo peut conserver une bibliothèque personnelle de documents de référence que vous pouvez afficher dans leur propre superposition pendant que vous travaillez — pratique pour garder des notes, un brief ou une checklist à portée de main pendant un appel.
 
-- **Gérer vos documents.** Dans **Paramètres → Ressources**, ajoutez des fichiers Markdown (`.md`) — jusqu'à **1 Mo** chacun — sous *Vos documents*, ou supprimez ceux dont vous n'avez plus besoin. Les documents sont privés à votre compte.
+- **Gérer vos documents.** Dans **Paramètres → Ressources**, ajoutez des fichiers Markdown (`.md`) — jusqu'à **1 Mo** chacun — sous *Vos documents*, ou supprimez ceux dont vous n'avez plus besoin. Les documents sont privés à votre compte. Le nombre de documents que vous pouvez conserver dépend de votre offre.
 - **Activer par projet.** Pour le projet actif, cochez les documents que vous voulez avoir sous la main. Les documents activés **s'ouvrent automatiquement en onglets** dans la visionneuse de documents chaque fois que vous l'ouvrez pour ce projet. Activer un document contrôle ce que la visionneuse affiche pour ce projet ; cela n'injecte pas le contenu du fichier dans les réponses de l'assistant.
 - **Ouvrir la visionneuse.** Depuis le menu de session de la superposition de chat (le bouton `···`), choisissez **Documents**. Elle s'ouvre comme sa propre fenêtre déplaçable qui, comme la superposition principale, est **masquée lors du partage et de l'enregistrement d'écran**. Le même élément de menu permet de la refermer.
 - **Lire et changer d'onglet.** Chaque document s'ouvre dans son propre onglet. Utilisez l'onglet **+** pour ouvrir n'importe lequel de vos documents, cliquez sur un onglet pour y basculer, et **×** pour le fermer. Le contenu s'affiche en Markdown formaté et suit le thème et la taille de police de votre chat.
@@ -176,7 +190,7 @@ Connectez **Google Agenda** (depuis **Paramètres → Général**) pour voir vos
 
 ### Tableau de bord et historique
 
-Le **Tableau de bord** est votre point de départ : il liste les sessions passées sous forme d'une liste consultable par recherche et regroupée par date (le champ de recherche se trouve dans l'en-tête de l'application) et vous permet d'ouvrir le détail d'une session, lequel comporte trois onglets — **Résumé** (le résumé de la réunion), **Transcription** (la transcription capturée) et **Utilisation** (les questions que vous avez posées à Elyvo pendant la session et ses réponses). Utilisez-le pour relire ou faire un suivi après une réunion.
+Le **Tableau de bord** est votre point de départ : il liste les sessions passées sous forme d'une liste consultable par recherche et regroupée par date (le champ de recherche se trouve dans l'en-tête de l'application) et vous permet d'ouvrir le détail d'une session, lequel comporte trois onglets — **Résumé** (le résumé de la réunion), **Transcription** (la transcription capturée) et **Utilisation** (les questions que vous avez posées à Elyvo pendant la session et ses réponses). Utilisez-le pour relire ou faire un suivi après une réunion. Dans l'onglet **Résumé**, le bouton de copie copie l'ensemble du résumé en une fois.
 
 ### Mémoire et auto-apprentissage
 
@@ -184,6 +198,8 @@ Elyvo s'améliore avec l'usage. Dans votre **Profil**, vous pouvez consulter et 
 
 - **Mémoire utilisateur** — des faits durables vous concernant et vos préférences, que l'assistant applique partout.
 - **Désambiguïsations** — des clarifications que l'assistant a apprises (par exemple, de quel « John » ou de quel projet vous parlez) afin qu'il cesse de mal deviner.
+
+L'auto-apprentissage dépend de votre offre. Sans lui, l'assistant continue d'utiliser tout ce que vous ajoutez vous-même — il cesse simplement de collecter de nouveaux faits de lui-même.
 
 ### Protection de la fenêtre contre le partage d'écran
 
@@ -203,10 +219,10 @@ Ouvrez les Paramètres depuis le menu utilisateur. Les onglets sont :
 - **Général** — préférences principales, périphérique d'entrée audio détecté et indicateurs de test du microphone / de l'audio système, connexion à Google Agenda, options de capture d'écran, et **Vérifier les mises à jour**.
 - **Raccourcis** — consultez et réattribuez chaque raccourci clavier.
 - **Profil** — vos réponses d'intégration, la mémoire utilisateur et les désambiguïsations.
-- **Sécurité** — options de sécurité du compte.
+- **Sécurité** — options de sécurité du compte, y compris les appareils connectés. Avec les offres limitées à un seul appareil, une connexion ailleurs déconnecte celui-ci.
 - **Langue** — langue de l'interface / des réponses.
 - **Ressources** — téléversez et gérez vos documents Markdown, et choisissez lesquels sont activés pour le projet actif (voir [Documents](#documents)).
-- **Facturation** — votre abonnement et votre offre (conditionne les fonctionnalités payantes telles que le chat IA ambiant).
+- **Facturation** — votre abonnement et votre offre : ce qu'elle inclut et comment en changer. Votre offre conditionne les fonctionnalités payantes comme le chat IA ambiant, le partage, ainsi que les limites de projets et de documents.
 
 ---
 
@@ -242,5 +258,7 @@ Pour mettre à jour, téléchargez le dernier installateur pour votre plateforme
 **La superposition apparaît toujours dans les captures d'écran sous Linux.** L'*enregistrement/le partage* d'écran est masqué par défaut. Sur KWin 6.7.0+ (Plasma 6.7+), les captures d'écran sont masquées d'office ; sur les KWin plus anciens, les captures d'écran statiques nécessitent le correctif KWin ponctuel décrit dans le [README](../README.md#window-protection-from-screen-sharing) — réappliquez-le après les mises à jour de KWin.
 
 **Problèmes de connexion.** Essayez la méthode alternative (e-mail/mot de passe plutôt que Google), et assurez-vous que l'horloge de votre système est correcte — la validation OAuth et des jetons est sensible au temps.
+
+**Vous avez été déconnecté(e) de façon inattendue.** Avec les offres limitées à un seul appareil, une connexion sur un autre appareil déconnecte celui-ci — reconnectez-vous simplement pour continuer. Vous pouvez consulter les appareils de votre compte dans **Paramètres → Sécurité**.
 
 Pour tout autre problème, ouvrez un ticket sur le [dépôt des versions](https://github.com/pdasilem/elyvo-assist/issues).

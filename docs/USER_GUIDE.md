@@ -150,22 +150,36 @@ How the rotation works: in a candidate-style mode Assist answers the question di
 
 Ambient chat is a lightweight, always-available chat that follows you across the app and can be scoped to a project. It is part of the paid plan (see **Settings → Billing**).
 
+### What your plan includes
+
+Elyvo works on every plan; an extended subscription widens the limits and unlocks the collaborative side of the app. In broad terms, a higher plan gives you:
+
+- longer and more frequent sessions;
+- room for more projects and more documents;
+- the ability to share a project with other people — on any plan you can always accept an invitation and work in someone else's project;
+- use of the app on more than one device at the same time;
+- the assistant's self-learning, so it keeps getting better from your sessions.
+
+What your current plan includes, and how to change it, is in **Settings → Billing**. Where a limit applies, the app tells you the moment you reach it rather than failing silently.
+
 ### Projects
 
 **Projects** group related sessions and give the assistant shared, persistent context. Within a project you can manage:
 
-- **Members** — see who's in the project and invite others by email (each invitee shows as *pending* until they accept).
+- **Members** — see who's in the project and invite others by email (each invitee shows as *pending* until they accept). Sending invitations requires a plan that includes sharing; accepting one and working in someone else's project does not.
 - **Memory** — facts and context the assistant should remember across sessions in that project.
 - **Rules** — guidance the assistant follows for that project.
 - **Settings** — a per-project **mode**, **output language**, and **transcript language**, plus **Enrich context** — a toggle (off by default) that lets the assistant pull relevant context from your *other* sessions in the same project (cross-session recall).
 
 When someone invites *you* to their project, the invitation appears at the top of **Projects** with **Accept** / **Reject** buttons. Ambient chat can be scoped to a project so answers draw on that project's memory and rules.
 
+If the owner's plan stops including sharing, a shared project becomes **read-only** for everyone until its members are removed. Nothing is deleted, and full access returns as soon as the project is no longer shared — or the plan includes sharing again.
+
 ### Documents
 
 Elyvo can keep a personal library of reference documents that you can pull up as their own overlay while you work — handy for keeping notes, a brief, or a checklist on hand during a call.
 
-- **Manage your documents.** In **Settings → Resources**, add Markdown (`.md`) files — up to **1 MB** each — under *Your documents*, or delete ones you no longer need. Documents are private to your account.
+- **Manage your documents.** In **Settings → Resources**, add Markdown (`.md`) files — up to **1 MB** each — under *Your documents*, or delete ones you no longer need. Documents are private to your account. How many documents you can keep depends on your plan.
 - **Enable per project.** For the active project, tick the documents you want ready to hand. Enabled documents **auto-open as tabs** in the Documents viewer whenever you open it for that project. Enabling a document controls what the viewer shows for that project; it does not feed the file's contents into the assistant's answers.
 - **Open the viewer.** From the chat overlay's session menu (the `···` button), choose **Documents**. It opens as its own draggable window that, like the main overlay, is **hidden from screen sharing and recording**. The same menu item toggles it closed.
 - **Read and switch.** Each document opens in its own tab. Use the **+** tab to open any of your documents, click a tab to switch, and **×** to close it. Content renders as formatted Markdown and follows your chat theme and font size.
@@ -176,7 +190,7 @@ Connect **Google Calendar** (from **Settings → General**) to see your upcoming
 
 ### Dashboard and history
 
-The **Dashboard** is your home base: it lists past sessions as a searchable, date-grouped list (the search box is in the app header) and lets you open a session's detail, which has three tabs — **Summary** (the meeting summary), **Transcript** (the captured transcript), and **Usage** (the questions you asked Elyvo during the session and its answers). Use it to review or follow up after a meeting.
+The **Dashboard** is your home base: it lists past sessions as a searchable, date-grouped list (the search box is in the app header) and lets you open a session's detail, which has three tabs — **Summary** (the meeting summary), **Transcript** (the captured transcript), and **Usage** (the questions you asked Elyvo during the session and its answers). Use it to review or follow up after a meeting. On the **Summary** tab, the copy button copies the whole summary at once.
 
 ### Memory and self-learning
 
@@ -184,6 +198,8 @@ Elyvo improves with use. Under your **Profile** you can review and edit:
 
 - **User memory** — long-lived facts about you and your preferences that the assistant applies everywhere.
 - **Disambiguations** — clarifications the assistant has learned (for example, which "John" or which project you mean) so it stops guessing wrong.
+
+Self-learning depends on your plan. Without it the assistant still uses everything you add yourself — it just stops collecting new facts on its own.
 
 ### Window protection from screen sharing
 
@@ -203,10 +219,10 @@ Open Settings from the user menu. The tabs are:
 - **General** — core preferences, the detected audio input device and the microphone / system-audio test meters, Google Calendar connection, screen-capture options, and **Check for updates**.
 - **Keybinds** — view and rebind every hotkey.
 - **Profile** — your onboarding answers, user memory, and disambiguations.
-- **Security** — account security options.
+- **Security** — account security options, including the devices signed in to your account. On plans limited to a single device, signing in elsewhere signs this one out.
 - **Language** — interface / response language.
 - **Resources** — upload and manage your Markdown documents, and choose which are enabled for the active project (see [Documents](#documents)).
-- **Billing** — your subscription and plan (gates paid features such as ambient AI chat).
+- **Billing** — your subscription and plan: what it includes and how to change it. Your plan gates paid features such as ambient AI chat, sharing, and the project and document limits.
 
 ---
 
@@ -242,5 +258,7 @@ To update, download the newest installer for your platform from [Releases](https
 **The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default. On KWin 6.7.0+ (Plasma 6.7+) screenshots are hidden out of the box; on older KWin, static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing) — re-apply it after KWin updates.
 
 **Sign-in problems.** Try the alternate method (email/password vs. Google), and make sure your system clock is correct — OAuth and token validation are time-sensitive.
+
+**You were signed out unexpectedly.** On plans limited to a single device, signing in on another device signs this one out — just sign in again to continue here. You can review the devices on your account in **Settings → Security**.
 
 For anything else, open an issue on the [releases repository](https://github.com/pdasilem/elyvo-assist/issues).

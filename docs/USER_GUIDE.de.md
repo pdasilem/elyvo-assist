@@ -150,22 +150,36 @@ Mit **Modi** kannst du das Verhalten des Assistenten für verschiedene Situation
 
 Der Ambient-Chat ist ein schlanker, jederzeit verfügbarer Chat, der dich durch die gesamte App begleitet und auf ein Projekt eingegrenzt werden kann. Er ist Teil des kostenpflichtigen Plans (siehe **Einstellungen → Abrechnung**).
 
+### Was dein Tarif umfasst
+
+Elyvo funktioniert in jedem Tarif; ein erweitertes Abonnement hebt die Grenzen an und schaltet die gemeinsame Arbeit frei. Grob gesagt bietet ein höherer Tarif:
+
+- längere und häufigere Sitzungen;
+- Spielraum für mehr Projekte und mehr Dokumente;
+- die Möglichkeit, ein Projekt mit anderen zu teilen — eine Einladung annehmen und im Projekt anderer arbeiten kannst du in jedem Tarif;
+- die Nutzung der App auf mehr als einem Gerät gleichzeitig;
+- das Selbstlernen des Assistenten, damit er aus deinen Sitzungen besser wird.
+
+Was dein aktueller Tarif umfasst und wie du ihn änderst, steht unter **Einstellungen → Abrechnung**. Wo eine Grenze gilt, sagt die App es dir in dem Moment, in dem du sie erreichst, statt still zu scheitern.
+
 ### Projekte
 
 **Projekte** fassen zusammengehörige Sitzungen zusammen und geben dem Assistenten einen gemeinsamen, dauerhaften Kontext. Innerhalb eines Projekts kannst du verwalten:
 
-- **Mitglieder** — sehen, wer im Projekt ist, und andere per E-Mail einladen (jede eingeladene Person wird bis zur Annahme als *ausstehend* angezeigt).
+- **Mitglieder** — sehen, wer im Projekt ist, und andere per E-Mail einladen (jede eingeladene Person wird bis zur Annahme als *ausstehend* angezeigt). Das Versenden von Einladungen erfordert einen Tarif mit Freigabe; eine Einladung annehmen und im Projekt anderer arbeiten dagegen nicht.
 - **Gedächtnis** — Fakten und Kontext, an die sich der Assistent über Sitzungen hinweg in diesem Projekt erinnern soll.
 - **Regeln** — Vorgaben, an die sich der Assistent für dieses Projekt hält.
 - **Einstellungen** — ein projektspezifischer **Modus**, eine **Ausgabesprache** und eine **Transkriptsprache**, sowie **Kontext anreichern** — ein Umschalter (standardmäßig deaktiviert), mit dem der Assistent relevanten Kontext aus deinen *anderen* Sitzungen im selben Projekt heranziehen kann (sitzungsübergreifender Rückgriff).
 
 Wenn dich jemand in sein Projekt einlädt, erscheint die Einladung oben in **Projekte** mit den Schaltflächen **Annehmen** / **Ablehnen**. Der Ambient-Chat kann auf ein Projekt eingegrenzt werden, sodass Antworten auf dem Gedächtnis und den Regeln dieses Projekts basieren.
 
+Wenn der Tarif der Eigentümerin oder des Eigentümers keine Freigabe mehr enthält, wird ein geteiltes Projekt für alle **schreibgeschützt**, bis seine Mitglieder entfernt werden. Es wird nichts gelöscht, und der volle Zugriff kehrt zurück, sobald das Projekt nicht mehr geteilt ist — oder der Tarif Freigabe wieder enthält.
+
 ### Dokumente
 
 Elyvo kann eine persönliche Bibliothek mit Referenzdokumenten führen, die du dir während der Arbeit als eigenes Overlay aufrufen kannst — praktisch, um Notizen, ein Briefing oder eine Checkliste während eines Anrufs griffbereit zu haben.
 
-- **Deine Dokumente verwalten.** Füge unter **Einstellungen → Ressourcen** Markdown-Dateien (`.md`) — jeweils bis zu **1 MB** — unter *Deine Dokumente* hinzu oder lösche nicht mehr benötigte. Dokumente sind privat für dein Konto.
+- **Deine Dokumente verwalten.** Füge unter **Einstellungen → Ressourcen** Markdown-Dateien (`.md`) — jeweils bis zu **1 MB** — unter *Deine Dokumente* hinzu oder lösche nicht mehr benötigte. Dokumente sind privat für dein Konto. Wie viele Dokumente du behalten kannst, hängt von deinem Tarif ab.
 - **Pro Projekt aktivieren.** Hake für das aktive Projekt die Dokumente ab, die griffbereit sein sollen. Aktivierte Dokumente **öffnen sich automatisch als Tabs** im Dokumenten-Viewer, sobald du ihn für dieses Projekt öffnest. Das Aktivieren eines Dokuments steuert, was der Viewer für dieses Projekt anzeigt; es speist den Inhalt der Datei nicht in die Antworten des Assistenten ein.
 - **Den Viewer öffnen.** Wähle im Sitzungsmenü des Chat-Overlays (die Schaltfläche `···`) **Dokumente**. Es öffnet sich als eigenes, verschiebbares Fenster, das wie das Haupt-Overlay **vor Bildschirmfreigabe und -aufnahme verborgen** ist. Derselbe Menüpunkt schließt es wieder.
 - **Lesen und wechseln.** Jedes Dokument öffnet sich in einem eigenen Tab. Nutze den **+**-Tab, um eines deiner Dokumente zu öffnen, klicke auf einen Tab zum Wechseln und auf **×**, um ihn zu schließen. Der Inhalt wird als formatiertes Markdown dargestellt und folgt deinem Chat-Theme und deiner Schriftgröße.
@@ -176,7 +190,7 @@ Verbinde **Google Kalender** (unter **Einstellungen → Allgemein**), um deine a
 
 ### Dashboard und Verlauf
 
-Das **Dashboard** ist deine Startzentrale: Es listet vergangene Sitzungen als durchsuchbare, nach Datum gruppierte Liste auf (das Suchfeld befindet sich in der App-Kopfzeile) und lässt dich die Detailansicht einer Sitzung öffnen, die drei Tabs hat — **Zusammenfassung** (die Meeting-Zusammenfassung), **Transkript** (das aufgezeichnete Transkript) und **Nutzung** (die Fragen, die du Elyvo während der Sitzung gestellt hast, und dessen Antworten). Nutze es, um ein Meeting nachzubereiten oder nachzuverfolgen.
+Das **Dashboard** ist deine Startzentrale: Es listet vergangene Sitzungen als durchsuchbare, nach Datum gruppierte Liste auf (das Suchfeld befindet sich in der App-Kopfzeile) und lässt dich die Detailansicht einer Sitzung öffnen, die drei Tabs hat — **Zusammenfassung** (die Meeting-Zusammenfassung), **Transkript** (das aufgezeichnete Transkript) und **Nutzung** (die Fragen, die du Elyvo während der Sitzung gestellt hast, und dessen Antworten). Nutze es, um ein Meeting nachzubereiten oder nachzuverfolgen. Im Tab **Zusammenfassung** kopiert die Kopierschaltfläche die gesamte Zusammenfassung auf einmal.
 
 ### Gedächtnis und Selbstlernen
 
@@ -184,6 +198,8 @@ Elyvo verbessert sich mit der Nutzung. Unter deinem **Profil** kannst du Folgend
 
 - **Benutzergedächtnis** — dauerhafte Fakten über dich und deine Präferenzen, die der Assistent überall anwendet.
 - **Begriffsklärungen** — Klarstellungen, die der Assistent gelernt hat (zum Beispiel, welchen „John" oder welches Projekt du meinst), damit er nicht mehr falsch rät.
+
+Selbstlernen hängt von deinem Tarif ab. Ohne es nutzt der Assistent weiterhin alles, was du selbst hinzufügst — er sammelt nur keine neuen Fakten mehr von sich aus.
 
 ### Fensterschutz vor Bildschirmfreigabe
 
@@ -203,10 +219,10 @@ Das Overlay ist bewusst für Aufnahmen unsichtbar, sodass du es während eines g
 - **Allgemein** — grundlegende Einstellungen, das erkannte Audioeingabegerät sowie die Test-Anzeigen für Mikrofon / Systemton, die Google-Kalender-Verbindung, Optionen zur Bildschirmaufnahme und **Nach Updates suchen**.
 - **Tastenkombinationen** — jede Tastenkombination ansehen und neu belegen.
 - **Profil** — deine Onboarding-Antworten, das Benutzergedächtnis und die Begriffsklärungen.
-- **Sicherheit** — Sicherheitsoptionen für dein Konto.
+- **Sicherheit** — Sicherheitsoptionen für dein Konto, einschließlich der angemeldeten Geräte. In Tarifen mit Ein-Geräte-Limit meldet eine Anmeldung anderswo dieses Gerät ab.
 - **Sprache** — Oberflächen- / Antwortsprache.
 - **Ressourcen** — deine Markdown-Dokumente hochladen und verwalten sowie auswählen, welche für das aktive Projekt aktiviert sind (siehe [Dokumente](#dokumente)).
-- **Abrechnung** — dein Abonnement und dein Plan (schaltet kostenpflichtige Funktionen wie den Ambient-KI-Chat frei).
+- **Abrechnung** — dein Abonnement und dein Tarif: was er umfasst und wie du ihn änderst. Der Tarif schaltet kostenpflichtige Funktionen frei, etwa den Ambient-KI-Chat, das Teilen sowie die Projekt- und Dokumentgrenzen.
 
 ---
 
@@ -242,5 +258,7 @@ Lade zum Aktualisieren das neueste Installationsprogramm für deine Plattform vo
 **Das Overlay wird unter Linux weiterhin in Screenshots angezeigt.** Bildschirm*aufnahme/-freigabe* wird standardmäßig verborgen. Auf KWin 6.7.0+ (Plasma 6.7+) sind Screenshots standardmäßig verborgen; auf älterem KWin erfordern statische Screenshots den einmaligen KWin-Patch, der im [README](../README.md#window-protection-from-screen-sharing) beschrieben ist — wende ihn nach KWin-Updates erneut an.
 
 **Anmeldeprobleme.** Versuche die alternative Methode (E-Mail/Passwort statt Google oder umgekehrt) und stelle sicher, dass deine Systemuhr korrekt eingestellt ist — OAuth und die Token-Validierung sind zeitkritisch.
+
+**Du wurdest unerwartet abgemeldet.** In Tarifen mit Ein-Geräte-Limit meldet eine Anmeldung auf einem anderen Gerät dieses hier ab — melde dich einfach erneut an. Die Geräte deines Kontos siehst du unter **Einstellungen → Sicherheit**.
 
 Für alles andere öffne ein Issue im [Releases-Repository](https://github.com/pdasilem/elyvo-assist/issues).
