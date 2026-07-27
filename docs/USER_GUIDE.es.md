@@ -2,7 +2,7 @@
 
 > 🌐 Esta guía también está disponible en: [English](USER_GUIDE.md) · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · **Español** · [Français](USER_GUIDE.fr.md) · [Italiano](USER_GUIDE.it.md) · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist es un asistente de IA de escritorio para reuniones, investigación y lluvias de ideas. Vive como una superposición translúcida sobre cualquier ventana, invocada con una tecla de acceso rápido. Puede escuchar tu micrófono y el audio del sistema, transcribir en tiempo real, ver tu pantalla y responder preguntas según el contexto, mientras permanece oculto para la compartición y grabación de pantalla.
+Elyvo Assist es un asistente de IA de escritorio para reuniones, investigación y lluvias de ideas. Vive como una superposición translúcida sobre cualquier ventana, invocada con una tecla de acceso rápido. Puede escuchar tu micrófono y el audio del sistema, transcribir en tiempo real, ver tu pantalla y responder preguntas según el contexto.
 
 Esta guía cubre la instalación y un resumen de las principales funciones.
 
@@ -44,7 +44,7 @@ Cada versión contiene, para la versión `X.Y.Z`:
 2. Abre la imagen de disco y arrastra **Elyvo Assist** a **Aplicaciones**.
 3. En el primer inicio, macOS puede advertir que la aplicación proviene de un desarrollador no identificado. Haz clic derecho en la aplicación → **Abrir** → **Abrir** para permitirla.
 
-> **Requisitos en Linux.** Elyvo Assist está diseñado para el escritorio **KDE Plasma** sobre **Wayland**. La protección de captura de pantalla de la superposición se implementa mediante KWin (el compositor de KDE), por lo que el comportamiento de ocultación frente a la compartición de pantalla solo funciona en KDE/KWin. Otros entornos de escritorio (GNOME, etc.) pueden ejecutar la aplicación, pero las garantías de protección de captura no se aplican. También necesitas una sesión de **PipeWire** en ejecución para la captura del micrófono y del audio del sistema.
+> **Requisitos en Linux.** Elyvo Assist está diseñado para el escritorio **KDE Plasma** sobre **Wayland**. La aplicación se integra con KWin (el compositor de KDE). Otros entornos de escritorio (GNOME, etc.) pueden ejecutar la aplicación, pero el comportamiento de la ventana puede variar. También necesitas una sesión de **PipeWire** en ejecución para la captura del micrófono y del audio del sistema.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ La configuración de audio y micrófono no se puede ajustar dentro de la app —
 
 ## La superposición y las teclas de acceso rápido
 
-Elyvo Assist se maneja casi por completo con el teclado para que puedas usarlo sin salir de tu reunión. La superposición de chat flota sobre otras ventanas, se puede arrastrar y está **oculta de la compartición y grabación de pantalla** (consulta [protección de ventana](../README.md#window-protection-from-screen-sharing)).
+Elyvo Assist se maneja casi por completo con el teclado para que puedas usarlo sin salir de tu reunión. La superposición de chat flota sobre otras ventanas y se puede arrastrar.
 
 Teclas de acceso rápido predeterminadas (todas reasignables en **Configuración → Combinaciones de teclas**):
 
@@ -181,7 +181,7 @@ Elyvo puede mantener una biblioteca personal de documentos de referencia que pue
 
 - **Gestiona tus documentos.** En **Configuración → Recursos**, agrega archivos Markdown (`.md`) —de hasta **1 MB** cada uno— en *Tus documentos*, o elimina los que ya no necesites. Los documentos son privados para tu cuenta. Cuántos documentos puedes conservar depende de tu plan.
 - **Habilita por proyecto.** Para el proyecto activo, marca los documentos que quieras tener listos a mano. Los documentos habilitados **se abren automáticamente como pestañas** en el visor de Documentos cada vez que lo abres para ese proyecto. Habilitar un documento controla lo que muestra el visor para ese proyecto; no introduce el contenido del archivo en las respuestas del asistente.
-- **Abre el visor.** Desde el menú de sesión de la superposición de chat (el botón `···`), elige **Documentos**. Se abre como su propia ventana arrastrable que, al igual que la superposición principal, está **oculta de la compartición y grabación de pantalla**. El mismo elemento del menú la cierra.
+- **Abre el visor.** Desde el menú de sesión de la superposición de chat (el botón `···`), elige **Documentos**. Se abre como su propia ventana arrastrable. El mismo elemento del menú la cierra.
 - **Lee y cambia.** Cada documento se abre en su propia pestaña. Usa la pestaña **+** para abrir cualquiera de tus documentos, haz clic en una pestaña para cambiar y en **×** para cerrarla. El contenido se renderiza como Markdown con formato y sigue el tema y el tamaño de fuente de tu chat.
 
 ### Calendario y reuniones
@@ -200,15 +200,6 @@ Elyvo mejora con el uso. En tu **Perfil** puedes revisar y editar:
 - **Desambiguaciones** — aclaraciones que el asistente ha aprendido (por ejemplo, a qué "Juan" o a qué proyecto te refieres) para que deje de adivinar mal.
 
 El autoaprendizaje depende de tu plan. Sin él, el asistente sigue usando todo lo que añadas tú — simplemente deja de recopilar hechos nuevos por su cuenta.
-
-### Protección de ventana frente a la compartición de pantalla
-
-La superposición es intencionalmente invisible a la captura para que puedas usarla durante una llamada compartida sin que aparezca en la transmisión. La cobertura varía según la plataforma; el [README principal](../README.md#window-protection-from-screen-sharing) es la matriz de referencia. En resumen:
-
-- **Windows 11** — oculta de todos los tipos de captura de forma predeterminada.
-- **Windows 10** — misma protección, pero **no garantizada**: una limitación conocida del sistema operativo puede mostrar la superposición como un rectángulo negro en la captura en lugar de ocultarla por completo.
-- **Linux (KDE / KWin)** — oculta de la *grabación y compartición* de pantalla de forma predeterminada. En **KWin 6.7.0+ (Plasma 6.7+)** las *capturas de pantalla* estáticas también quedan ocultas de forma predeterminada — no se necesita parche. En KWin más antiguos (≤ 6.6.x), ocultarla de las *capturas de pantalla* estáticas (Spectacle/PrintScreen) requiere un parche de KWin de una sola vez, que debe volver a aplicarse tras las actualizaciones de KWin.
-- **macOS** — utiliza el mismo mecanismo nativo de protección de contenido. Fiable en **macOS 14 y anteriores**; en **macOS 15 y posteriores** la indetectabilidad **no está garantizada** y la superposición puede aparecer en las capturas.
 
 ---
 
@@ -254,8 +245,6 @@ Para actualizar, descarga el instalador más reciente para tu plataforma desde [
 **La superposición no aparece.** Asegúrate de que la aplicación esté en ejecución (comprueba la bandeja del sistema/la barra de menú) y presiona la tecla de acceso rápido de alternancia (`Ctrl+\`). En macOS, confirma que el permiso de Accesibilidad esté concedido; de lo contrario, las teclas de acceso rápido globales no se activarán.
 
 **No se captura audio.** Comprueba el acceso al micrófono y a la captura de pantalla en la configuración de privacidad de tu sistema operativo, y luego usa la prueba de micrófono / audio del sistema en **Configuración → General** para confirmar los niveles. Elyvo utiliza el dispositivo de entrada predeterminado de tu sistema, así que configura el dispositivo correcto como predeterminado en los ajustes de sonido de tu sistema operativo. En Linux, confirma que PipeWire esté en ejecución.
-
-**La superposición sigue apareciendo en las capturas de pantalla en Linux.** La *grabación/compartición* de pantalla está oculta de forma predeterminada. En KWin 6.7.0+ (Plasma 6.7+) las capturas de pantalla quedan ocultas de forma predeterminada; en KWin más antiguos, las capturas de pantalla estáticas requieren el parche de KWin de una sola vez descrito en el [README](../README.md#window-protection-from-screen-sharing) — vuelve a aplicarlo después de las actualizaciones de KWin.
 
 **Problemas de inicio de sesión.** Prueba el método alternativo (correo electrónico/contraseña frente a Google) y asegúrate de que el reloj de tu sistema esté correcto; la validación de OAuth y de tokens es sensible al tiempo.
 

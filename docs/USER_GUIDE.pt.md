@@ -2,7 +2,7 @@
 
 > 🌐 Este guia também está disponível em: [English](USER_GUIDE.md) · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · [Español](USER_GUIDE.es.md) · [Français](USER_GUIDE.fr.md) · [Italiano](USER_GUIDE.it.md) · **Português** · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist é um assistente de IA para desktop destinado a reuniões, pesquisa e brainstorming. Funciona como uma sobreposição translúcida por cima de qualquer janela, invocada através de um atalho de teclado. Consegue ouvir o seu microfone e o áudio do sistema, transcrever em tempo real, ver o seu ecrã e responder a perguntas em contexto — mantendo-se oculto na partilha e na gravação de ecrã.
+Elyvo Assist é um assistente de IA para desktop destinado a reuniões, pesquisa e brainstorming. Funciona como uma sobreposição translúcida por cima de qualquer janela, invocada através de um atalho de teclado. Consegue ouvir o seu microfone e o áudio do sistema, transcrever em tempo real, ver o seu ecrã e responder a perguntas em contexto.
 
 Este guia aborda a instalação e uma visão geral das principais funcionalidades.
 
@@ -44,7 +44,7 @@ Cada versão contém, para a versão `X.Y.Z`:
 2. Abra a imagem de disco e arraste o **Elyvo Assist** para **Applications**.
 3. No primeiro arranque, o macOS pode avisar que a aplicação é de um programador não identificado. Clique com o botão direito na aplicação → **Open** → **Open** para a permitir.
 
-> **Requisitos no Linux.** O Elyvo Assist destina-se ao ambiente de trabalho **KDE Plasma** sobre **Wayland**. A proteção contra captura de ecrã da sobreposição é implementada através do KWin (o compositor do KDE), pelo que o comportamento de ocultação na partilha de ecrã só funciona em KDE/KWin. Outros ambientes de trabalho (GNOME, etc.) conseguem executar a aplicação, mas as garantias de proteção contra captura não se aplicam. Também precisa de uma sessão **PipeWire** em execução para a captura de microfone e de áudio do sistema.
+> **Requisitos no Linux.** O Elyvo Assist destina-se ao ambiente de trabalho **KDE Plasma** sobre **Wayland**. A aplicação integra-se com o KWin (o compositor do KDE). Outros ambientes de trabalho (GNOME, etc.) conseguem executar a aplicação, mas o comportamento da janela pode diferir. Também precisa de uma sessão **PipeWire** em execução para a captura de microfone e de áudio do sistema.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ As definições de áudio e microfone em si não podem ser configuradas dentro d
 
 ## A sobreposição e os atalhos de teclado
 
-O Elyvo Assist é comandado quase inteiramente pelo teclado, para que o possa usar sem sair da sua reunião. A sobreposição de chat flutua por cima de outras janelas, pode ser arrastada e está **oculta na partilha e na gravação de ecrã** (consulte [proteção da janela](../README.md#window-protection-from-screen-sharing)).
+O Elyvo Assist é comandado quase inteiramente pelo teclado, para que o possa usar sem sair da sua reunião. A sobreposição de chat flutua por cima de outras janelas e pode ser arrastada.
 
 Atalhos predefinidos (todos redefiníveis em **Definições → Atalhos de teclado**):
 
@@ -181,7 +181,7 @@ O Elyvo pode manter uma biblioteca pessoal de documentos de referência que pode
 
 - **Gerir os seus documentos.** Em **Definições → Recursos**, adicione ficheiros Markdown (`.md`) — até **1 MB** cada — em *Os seus documentos*, ou elimine os que já não precisa. Os documentos são privados à sua conta. Quantos documentos pode manter depende do seu plano.
 - **Ativar por projeto.** No projeto ativo, assinale os documentos que quer ter à mão. Os documentos ativados **abrem automaticamente como separadores** no visualizador de Documentos sempre que o abrir para esse projeto. Ativar um documento controla o que o visualizador mostra para esse projeto; não introduz o conteúdo do ficheiro nas respostas do assistente.
-- **Abrir o visualizador.** No menu de sessão da sobreposição de chat (o botão `···`), escolha **Documentos**. Abre-se como uma janela própria, arrastável, que, tal como a sobreposição principal, está **oculta na partilha e na gravação de ecrã**. O mesmo item de menu alterna o seu fecho.
+- **Abrir o visualizador.** No menu de sessão da sobreposição de chat (o botão `···`), escolha **Documentos**. Abre-se como uma janela própria, arrastável. O mesmo item de menu alterna o seu fecho.
 - **Ler e alternar.** Cada documento abre no seu próprio separador. Utilize o separador **+** para abrir qualquer um dos seus documentos, clique num separador para mudar e em **×** para o fechar. O conteúdo é apresentado como Markdown formatado e segue o tema e o tamanho de letra do seu chat.
 
 ### Calendário e reuniões
@@ -200,15 +200,6 @@ O Elyvo melhora com o uso. No seu **Perfil** pode rever e editar:
 - **Desambiguações** — esclarecimentos que o assistente aprendeu (por exemplo, a que "John" ou a que projeto se refere) para deixar de adivinhar de forma errada.
 
 A autoaprendizagem depende do seu plano. Sem ela, o assistente continua a usar tudo o que adicionar — apenas deixa de recolher novos factos por iniciativa própria.
-
-### Proteção da janela na partilha de ecrã
-
-A sobreposição é deliberadamente invisível à captura, para que a possa usar durante uma chamada partilhada sem que apareça na transmissão. A cobertura varia consoante a plataforma — o [README principal](../README.md#window-protection-from-screen-sharing) é a matriz de referência. Em resumo:
-
-- **Windows 11** — oculta de todos os tipos de captura por predefinição.
-- **Windows 10** — mesma proteção, mas **não garantida**: uma limitação conhecida do sistema operativo pode mostrar a sobreposição como um retângulo preto na captura, em vez de a ocultar corretamente.
-- **Linux (KDE / KWin)** — oculta na *gravação e partilha* de ecrã por predefinição. No **KWin 6.7.0+ (Plasma 6.7+)** as *capturas de ecrã* estáticas também ficam ocultas por predefinição — não é necessário patch. Em KWin mais antigos (≤ 6.6.x), ocultá-la em *capturas de ecrã* estáticas (Spectacle/PrintScreen) requer um patch pontual do KWin, que deve ser reaplicado após atualizações do KWin.
-- **macOS** — utiliza o mesmo mecanismo nativo de proteção de conteúdo. Fiável no **macOS 14 e anteriores**; no **macOS 15 e posteriores** a não deteção **não é garantida** e a sobreposição pode aparecer nas capturas.
 
 ---
 
@@ -254,8 +245,6 @@ Para atualizar, descarregue o instalador mais recente para a sua plataforma a pa
 **A sobreposição não aparece.** Certifique-se de que a aplicação está em execução (verifique o tabuleiro do sistema/barra de menu) e prima o atalho de alternância (`Ctrl+\`). No macOS, confirme que a permissão de Acessibilidade está concedida, caso contrário os atalhos globais não funcionam.
 
 **Não é captado áudio.** Verifique o acesso ao microfone e à captura de ecrã nas definições de privacidade do seu sistema operativo e, em seguida, utilize o teste de microfone/áudio do sistema em **Definições → Geral** para confirmar os níveis. O Elyvo utiliza o dispositivo de entrada predefinido do seu sistema, pelo que deve definir o predefinido correto nas definições de som do seu sistema operativo. No Linux, confirme que o PipeWire está em execução.
-
-**A sobreposição continua a aparecer em capturas de ecrã no Linux.** A *gravação/partilha* de ecrã está oculta por predefinição. No KWin 6.7.0+ (Plasma 6.7+) as capturas de ecrã ficam ocultas por predefinição; em KWin mais antigos, as capturas de ecrã estáticas requerem o patch pontual do KWin descrito no [README](../README.md#window-protection-from-screen-sharing) — reaplique-o após atualizações do KWin.
 
 **Problemas ao iniciar sessão.** Experimente o método alternativo (email/palavra-passe versus Google) e certifique-se de que o relógio do seu sistema está correto — a validação OAuth e de tokens é sensível ao tempo.
 

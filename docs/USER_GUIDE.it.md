@@ -2,7 +2,7 @@
 
 > 🌐 Questa guida è disponibile anche in: [English](USER_GUIDE.md) · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · [Español](USER_GUIDE.es.md) · [Français](USER_GUIDE.fr.md) · **Italiano** · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist è un assistente AI desktop per riunioni, ricerca e brainstorming. Si presenta come un overlay traslucido sopra qualsiasi finestra, richiamabile con una scorciatoia da tastiera. Può ascoltare il tuo microfono e l'audio di sistema, trascrivere in tempo reale, osservare il tuo schermo e rispondere alle domande tenendo conto del contesto — restando invisibile alla condivisione e alla registrazione dello schermo.
+Elyvo Assist è un assistente AI desktop per riunioni, ricerca e brainstorming. Si presenta come un overlay traslucido sopra qualsiasi finestra, richiamabile con una scorciatoia da tastiera. Può ascoltare il tuo microfono e l'audio di sistema, trascrivere in tempo reale, osservare il tuo schermo e rispondere alle domande tenendo conto del contesto.
 
 Questa guida copre l'installazione e una panoramica delle funzionalità principali.
 
@@ -44,7 +44,7 @@ Ogni release contiene, per la versione `X.Y.Z`:
 2. Apri l'immagine disco e trascina **Elyvo Assist** in **Applicazioni**.
 3. Al primo avvio, macOS potrebbe avvisare che l'app proviene da uno sviluppatore non identificato. Fai clic destro sull'app → **Apri** → **Apri** per consentirne l'esecuzione.
 
-> **Requisiti Linux.** Elyvo Assist è pensato per il desktop **KDE Plasma** su **Wayland**. La protezione dell'overlay dalla cattura dello schermo è implementata tramite KWin (il compositor di KDE), quindi il comportamento di occultamento dalla condivisione dello schermo funziona solo su KDE/KWin. Altri desktop (GNOME, ecc.) possono eseguire l'app, ma le garanzie di protezione dalla cattura non si applicano. È inoltre necessaria una sessione **PipeWire** attiva per la cattura del microfono e dell'audio di sistema.
+> **Requisiti Linux.** Elyvo Assist è pensato per il desktop **KDE Plasma** su **Wayland**. L'app si integra con KWin (il compositor di KDE). Altri desktop (GNOME, ecc.) possono eseguire l'app, ma il comportamento della finestra può variare. È inoltre necessaria una sessione **PipeWire** attiva per la cattura del microfono e dell'audio di sistema.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ Le impostazioni audio e del microfono non sono configurabili dall'app — Elyvo 
 
 ## L'overlay e le scorciatoie da tastiera
 
-Elyvo Assist è controllato quasi interamente da tastiera, così puoi usarlo senza dover uscire dalla tua riunione. L'overlay della chat fluttua sopra le altre finestre, è trascinabile ed è **nascosto dalla condivisione e dalla registrazione dello schermo** (vedi [protezione della finestra](../README.md#window-protection-from-screen-sharing)).
+Elyvo Assist è controllato quasi interamente da tastiera, così puoi usarlo senza dover uscire dalla tua riunione. L'overlay della chat fluttua sopra le altre finestre ed è trascinabile.
 
 Scorciatoie predefinite (tutte riassegnabili in **Impostazioni → Scorciatoie**):
 
@@ -181,7 +181,7 @@ Elyvo può conservare una libreria personale di documenti di riferimento che puo
 
 - **Gestisci i tuoi documenti.** In **Impostazioni → Risorse**, aggiungi file Markdown (`.md`) — fino a **1 MB** ciascuno — nella sezione *I tuoi documenti*, oppure elimina quelli che non ti servono più. I documenti sono privati e associati al tuo account. Quanti documenti puoi conservare dipende dal tuo piano.
 - **Attiva per progetto.** Per il progetto attivo, seleziona i documenti che vuoi avere a portata di mano. I documenti attivati si **aprono automaticamente come schede** nel visualizzatore Documenti ogni volta che lo apri per quel progetto. Attivare un documento controlla cosa mostra il visualizzatore per quel progetto; non inserisce il contenuto del file nelle risposte dell'assistente.
-- **Apri il visualizzatore.** Dal menu della sessione dell'overlay della chat (il pulsante `···`), scegli **Documenti**. Si apre come finestra trascinabile a sé stante che, come l'overlay principale, è **nascosta dalla condivisione e dalla registrazione dello schermo**. Lo stesso elemento del menu la chiude.
+- **Apri il visualizzatore.** Dal menu della sessione dell'overlay della chat (il pulsante `···`), scegli **Documenti**. Si apre come finestra trascinabile a sé stante. Lo stesso elemento del menu la chiude.
 - **Leggi e cambia scheda.** Ogni documento si apre nella propria scheda. Usa la scheda **+** per aprire uno qualsiasi dei tuoi documenti, fai clic su una scheda per passare da un documento all'altro e su **×** per chiuderla. Il contenuto viene visualizzato come Markdown formattato e segue il tema e la dimensione del carattere della tua chat.
 
 ### Calendario e riunioni
@@ -200,15 +200,6 @@ Elyvo migliora con l'uso. Nel tuo **Profilo** puoi rivedere e modificare:
 - **Disambiguazioni** — chiarimenti che l'assistente ha appreso (ad esempio, quale "Mario" o quale progetto intendi) in modo da non indovinare più in modo errato.
 
 L'apprendimento autonomo dipende dal tuo piano. Senza di esso l'assistente continua a usare tutto ciò che aggiungi tu — smette solo di raccogliere nuovi fatti da solo.
-
-### Protezione della finestra dalla condivisione dello schermo
-
-L'overlay è deliberatamente invisibile alla cattura, così puoi usarlo durante una chiamata condivisa senza che compaia nello streaming. La copertura varia in base alla piattaforma — il [README principale](../README.md#window-protection-from-screen-sharing) è la matrice autorevole. In breve:
-
-- **Windows 11** — nascosto da tutti i tipi di cattura fin da subito.
-- **Windows 10** — stessa protezione, ma **non garantita**: una limitazione nota del sistema operativo può mostrare l'overlay come un rettangolo nero nella cattura invece di nasconderlo correttamente.
-- **Linux (KDE / KWin)** — nascosto dalla *registrazione e condivisione* dello schermo fin da subito. Su **KWin 6.7.0+ (Plasma 6.7+)** anche gli *screenshot* statici sono nascosti fin da subito — nessuna patch necessaria. Su KWin più vecchi (≤ 6.6.x), nasconderlo dagli *screenshot* statici (Spectacle/PrintScreen) richiede una patch KWin una tantum, da riapplicare dopo gli aggiornamenti di KWin.
-- **macOS** — utilizza lo stesso meccanismo nativo di protezione dei contenuti. Affidabile su **macOS 14 e versioni precedenti**; su **macOS 15 e versioni successive** l'invisibilità **non è garantita** e l'overlay potrebbe comparire nelle catture.
 
 ---
 
@@ -254,8 +245,6 @@ Per aggiornare, scarica il nuovo installer per la tua piattaforma da [Releases](
 **L'overlay non appare.** Assicurati che l'app sia in esecuzione (controlla la barra delle applicazioni/menu bar) e premi la scorciatoia di attivazione (`Ctrl+\`). Su macOS, verifica che il permesso di Accessibilità sia stato concesso, altrimenti le scorciatoie globali non funzioneranno.
 
 **Nessun audio viene catturato.** Controlla l'accesso al microfono e alla cattura schermo nelle impostazioni sulla privacy del tuo sistema operativo, quindi usa il test del microfono / audio di sistema in **Impostazioni → Generale** per verificare i livelli. Elyvo utilizza il dispositivo di input predefinito del tuo sistema, quindi imposta il dispositivo corretto come predefinito nelle impostazioni audio del sistema operativo. Su Linux, verifica che PipeWire sia in esecuzione.
-
-**L'overlay continua a comparire negli screenshot su Linux.** La *registrazione/condivisione* dello schermo è nascosta per impostazione predefinita. Su KWin 6.7.0+ (Plasma 6.7+) gli screenshot sono nascosti fin da subito; su KWin più vecchi gli screenshot statici richiedono la patch KWin una tantum descritta nel [README](../README.md#window-protection-from-screen-sharing) — riapplicala dopo gli aggiornamenti di KWin.
 
 **Problemi di accesso.** Prova il metodo alternativo (email/password rispetto a Google) e assicurati che l'orologio di sistema sia impostato correttamente — OAuth e la validazione dei token sono sensibili al fattore tempo.
 

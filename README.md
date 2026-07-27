@@ -18,18 +18,6 @@ This repository hosts public releases. Client source code is in `elyvo-assist-sr
 | Русский (Russian) | [USER_GUIDE.ru.md](docs/USER_GUIDE.ru.md) |
 | Українська (Ukrainian) | [USER_GUIDE.uk.md](docs/USER_GUIDE.uk.md) |
 
-## Window protection from screen sharing
-
-The chat window is hidden from screenshots, screen recording, and screen sharing (Zoom, Google Meet, Discord, OBS).
-
-- **Windows 11** — native `set_content_protected`, works out of the box for all capture types.
-- **Windows 10** — same mechanism, but **NOT guaranteed**: a known Windows/DWM limitation can make the window appear as a solid black rectangle in the capture instead of being cleanly excluded (varies by build and by the screen-sharing/recording tool used).
-- **macOS** — native `set_content_protected`; reliable on macOS 14 and earlier. On macOS 15+ undetectability is **NOT** guaranteed and the window may appear in captures.
-- **Linux (KDE / KWin)** — screen recording / sharing works out of the box via `excludeFromCapture`. On **KWin 6.7.0+ (Plasma 6.7+)** static screenshots are also hidden out of the box — no patch needed. On older KWin (≤ 6.6.x) static screenshots (Spectacle, PrintScreen) are **NOT** hidden without a KWin patch — see `elyvo-assist-src/scripts/kwin/kwin-screenshot-patch.sh`.
-- **Browser-based Zoom/Meet** — the OS window picker may show a preview, but the window content is hidden during the stream.
-
-> **Manjaro / Ubuntu** — on KWin older than 6.7.0, full screenshot protection requires patching KWin (see the script above); the patch must be reapplied after every KWin update. From KWin 6.7.0+ the protection is built in and no patch is needed.
-
 ## Roadmap
 
 - [x] OAuth2 providers — sign-in via OAuth2 (in addition to email/password)

@@ -2,7 +2,7 @@
 
 > 🌐 Ce guide est également disponible en : [English](USER_GUIDE.md) · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · [Español](USER_GUIDE.es.md) · **Français** · [Italiano](USER_GUIDE.it.md) · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist est un assistant IA de bureau pour les réunions, la recherche et le brainstorming. Il se présente sous la forme d'une superposition translucide au-dessus de n'importe quelle fenêtre, invoquée par un raccourci clavier. Il peut écouter votre microphone et l'audio système, transcrire en direct, observer votre écran et répondre à des questions en contexte — tout en restant invisible lors du partage et de l'enregistrement d'écran.
+Elyvo Assist est un assistant IA de bureau pour les réunions, la recherche et le brainstorming. Il se présente sous la forme d'une superposition translucide au-dessus de n'importe quelle fenêtre, invoquée par un raccourci clavier. Il peut écouter votre microphone et l'audio système, transcrire en direct, observer votre écran et répondre à des questions en contexte.
 
 Ce guide couvre l'installation et présente un aperçu des principales fonctionnalités.
 
@@ -44,7 +44,7 @@ Chaque version contient, pour la version `X.Y.Z` :
 2. Ouvrez l'image disque et faites glisser **Elyvo Assist** vers **Applications**.
 3. Au premier lancement, macOS peut avertir que l'application provient d'un développeur non identifié. Faites un clic droit sur l'application → **Ouvrir** → **Ouvrir** pour l'autoriser.
 
-> **Exigences Linux.** Elyvo Assist cible le bureau **KDE Plasma** sous **Wayland**. La protection contre la capture d'écran de la superposition est implémentée via KWin (le compositeur de KDE), donc le comportement de masquage lors du partage d'écran ne fonctionne que sous KDE/KWin. D'autres environnements de bureau (GNOME, etc.) peuvent exécuter l'application, mais les garanties de protection contre la capture ne s'appliquent pas. Vous avez également besoin d'une session **PipeWire** active pour la capture du microphone et de l'audio système.
+> **Exigences Linux.** Elyvo Assist cible le bureau **KDE Plasma** sous **Wayland**. L'application s'intègre à KWin (le compositeur de KDE). D'autres environnements de bureau (GNOME, etc.) peuvent exécuter l'application, mais le comportement de la fenêtre peut différer. Vous avez également besoin d'une session **PipeWire** active pour la capture du microphone et de l'audio système.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ Les paramètres audio et microphone eux-mêmes ne peuvent pas être configurés 
 
 ## La superposition et les raccourcis clavier
 
-Elyvo Assist se pilote presque entièrement au clavier afin que vous puissiez l'utiliser sans quitter votre réunion. La superposition de chat flotte au-dessus des autres fenêtres, est déplaçable, et est **masquée lors du partage et de l'enregistrement d'écran** (voir [protection de la fenêtre](../README.md#window-protection-from-screen-sharing)).
+Elyvo Assist se pilote presque entièrement au clavier afin que vous puissiez l'utiliser sans quitter votre réunion. La superposition de chat flotte au-dessus des autres fenêtres et est déplaçable.
 
 Raccourcis clavier par défaut (tous personnalisables dans **Paramètres → Raccourcis**) :
 
@@ -181,7 +181,7 @@ Elyvo peut conserver une bibliothèque personnelle de documents de référence q
 
 - **Gérer vos documents.** Dans **Paramètres → Ressources**, ajoutez des fichiers Markdown (`.md`) — jusqu'à **1 Mo** chacun — sous *Vos documents*, ou supprimez ceux dont vous n'avez plus besoin. Les documents sont privés à votre compte. Le nombre de documents que vous pouvez conserver dépend de votre offre.
 - **Activer par projet.** Pour le projet actif, cochez les documents que vous voulez avoir sous la main. Les documents activés **s'ouvrent automatiquement en onglets** dans la visionneuse de documents chaque fois que vous l'ouvrez pour ce projet. Activer un document contrôle ce que la visionneuse affiche pour ce projet ; cela n'injecte pas le contenu du fichier dans les réponses de l'assistant.
-- **Ouvrir la visionneuse.** Depuis le menu de session de la superposition de chat (le bouton `···`), choisissez **Documents**. Elle s'ouvre comme sa propre fenêtre déplaçable qui, comme la superposition principale, est **masquée lors du partage et de l'enregistrement d'écran**. Le même élément de menu permet de la refermer.
+- **Ouvrir la visionneuse.** Depuis le menu de session de la superposition de chat (le bouton `···`), choisissez **Documents**. Elle s'ouvre comme sa propre fenêtre déplaçable. Le même élément de menu permet de la refermer.
 - **Lire et changer d'onglet.** Chaque document s'ouvre dans son propre onglet. Utilisez l'onglet **+** pour ouvrir n'importe lequel de vos documents, cliquez sur un onglet pour y basculer, et **×** pour le fermer. Le contenu s'affiche en Markdown formaté et suit le thème et la taille de police de votre chat.
 
 ### Calendrier et réunions
@@ -200,15 +200,6 @@ Elyvo s'améliore avec l'usage. Dans votre **Profil**, vous pouvez consulter et 
 - **Désambiguïsations** — des clarifications que l'assistant a apprises (par exemple, de quel « John » ou de quel projet vous parlez) afin qu'il cesse de mal deviner.
 
 L'auto-apprentissage dépend de votre offre. Sans lui, l'assistant continue d'utiliser tout ce que vous ajoutez vous-même — il cesse simplement de collecter de nouveaux faits de lui-même.
-
-### Protection de la fenêtre contre le partage d'écran
-
-La superposition est délibérément invisible à la capture afin que vous puissiez l'utiliser pendant un appel partagé sans qu'elle apparaisse dans le flux. La couverture diffère selon la plateforme — le [README principal](../README.md#window-protection-from-screen-sharing) fait foi pour la matrice complète. En résumé :
-
-- **Windows 11** — masquée de tous les types de capture dès l'installation.
-- **Windows 10** — même protection, mais **non garantie** : une limitation connue du système d'exploitation peut afficher la superposition sous forme de rectangle noir dans la capture au lieu de la masquer proprement.
-- **Linux (KDE / KWin)** — masquée de l'*enregistrement et du partage* d'écran dès l'installation. Sur **KWin 6.7.0+ (Plasma 6.7+)**, les *captures d'écran* statiques sont également masquées d'office — aucun correctif nécessaire. Sur les KWin plus anciens (≤ 6.6.x), la masquer des *captures d'écran* statiques (Spectacle/PrintScreen) nécessite un correctif KWin ponctuel, à réappliquer après chaque mise à jour de KWin.
-- **macOS** — utilise le même mécanisme natif de protection du contenu. Fiable sur **macOS 14 et versions antérieures** ; sur **macOS 15 et versions ultérieures**, la non-détectabilité n'est **pas garantie** et la superposition peut apparaître dans les captures.
 
 ---
 
@@ -254,8 +245,6 @@ Pour mettre à jour, téléchargez le dernier installateur pour votre plateforme
 **La superposition n'apparaît pas.** Assurez-vous que l'application est en cours d'exécution (vérifiez la barre système/la barre de menus) et appuyez sur le raccourci de bascule (`Ctrl+\`). Sur macOS, vérifiez que l'autorisation Accessibilité est accordée, sinon les raccourcis clavier globaux ne fonctionneront pas.
 
 **Aucun audio n'est capturé.** Vérifiez l'accès au microphone et à la capture d'écran dans les paramètres de confidentialité de votre système d'exploitation, puis utilisez le test du microphone / de l'audio système dans **Paramètres → Général** pour confirmer les niveaux. Elyvo utilise le périphérique d'entrée par défaut de votre système, définissez donc le bon périphérique par défaut dans les paramètres audio de votre système d'exploitation. Sur Linux, vérifiez que PipeWire est en cours d'exécution.
-
-**La superposition apparaît toujours dans les captures d'écran sous Linux.** L'*enregistrement/le partage* d'écran est masqué par défaut. Sur KWin 6.7.0+ (Plasma 6.7+), les captures d'écran sont masquées d'office ; sur les KWin plus anciens, les captures d'écran statiques nécessitent le correctif KWin ponctuel décrit dans le [README](../README.md#window-protection-from-screen-sharing) — réappliquez-le après les mises à jour de KWin.
 
 **Problèmes de connexion.** Essayez la méthode alternative (e-mail/mot de passe plutôt que Google), et assurez-vous que l'horloge de votre système est correcte — la validation OAuth et des jetons est sensible au temps.
 

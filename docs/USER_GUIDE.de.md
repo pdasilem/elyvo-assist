@@ -2,7 +2,7 @@
 
 > 🌐 Dieser Leitfaden ist auch verfügbar auf: [English](USER_GUIDE.md) · [Беларуская](USER_GUIDE.be.md) · **Deutsch** · [Español](USER_GUIDE.es.md) · [Français](USER_GUIDE.fr.md) · [Italiano](USER_GUIDE.it.md) · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist ist ein Desktop-KI-Assistent für Meetings, Recherchen und Brainstormings. Er läuft als durchscheinendes Overlay über jedem Fenster und wird per Tastenkombination aufgerufen. Er kann dein Mikrofon und den Systemton mithören, live transkribieren, deinen Bildschirm sehen und Fragen im Kontext beantworten — und bleibt dabei vor Bildschirmfreigabe und Bildschirmaufnahme verborgen.
+Elyvo Assist ist ein Desktop-KI-Assistent für Meetings, Recherchen und Brainstormings. Er läuft als durchscheinendes Overlay über jedem Fenster und wird per Tastenkombination aufgerufen. Er kann dein Mikrofon und den Systemton mithören, live transkribieren, deinen Bildschirm sehen und Fragen im Kontext beantworten.
 
 Dieser Leitfaden behandelt die Installation und einen Überblick über die wichtigsten Funktionen.
 
@@ -44,7 +44,7 @@ Jedes Release enthält, pro Version `X.Y.Z`:
 2. Öffne das Disk-Image und ziehe **Elyvo Assist** in den Ordner **Programme**.
 3. Beim ersten Start warnt macOS möglicherweise, dass die App von einem nicht identifizierten Entwickler stammt. Klicke mit der rechten Maustaste auf die App → **Öffnen** → **Öffnen**, um sie zuzulassen.
 
-> **Linux-Anforderungen.** Elyvo Assist ist auf die Desktop-Umgebung **KDE Plasma** unter **Wayland** ausgerichtet. Der Bildschirmaufnahmeschutz des Overlays ist über KWin (den Compositor von KDE) implementiert, daher funktioniert das Verbergen vor Bildschirmfreigabe nur unter KDE/KWin. Andere Desktop-Umgebungen (GNOME usw.) können die App ausführen, aber die Garantien zum Aufnahmeschutz gelten dort nicht. Außerdem benötigst du eine laufende **PipeWire**-Sitzung für die Mikrofon- und Systemton-Aufnahme.
+> **Linux-Anforderungen.** Elyvo Assist ist auf die Desktop-Umgebung **KDE Plasma** unter **Wayland** ausgerichtet. Die App ist in KWin (den Compositor von KDE) integriert. Andere Desktop-Umgebungen (GNOME usw.) können die App ausführen, aber das Fensterverhalten kann abweichen. Außerdem benötigst du eine laufende **PipeWire**-Sitzung für die Mikrofon- und Systemton-Aufnahme.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ Die Audio- und Mikrofoneinstellungen selbst lassen sich nicht in der App konfigu
 
 ## Das Overlay und die Tastenkombinationen
 
-Elyvo Assist wird fast ausschließlich über die Tastatur gesteuert, sodass du es benutzen kannst, ohne dein Meeting zu verlassen. Das Chat-Overlay schwebt über anderen Fenstern, lässt sich verschieben und ist **vor Bildschirmfreigabe und -aufnahme verborgen** (siehe [Fensterschutz](../README.md#window-protection-from-screen-sharing)).
+Elyvo Assist wird fast ausschließlich über die Tastatur gesteuert, sodass du es benutzen kannst, ohne dein Meeting zu verlassen. Das Chat-Overlay schwebt über anderen Fenstern und lässt sich verschieben.
 
 Standard-Tastenkombinationen (alle unter **Einstellungen → Tastenkombinationen** neu belegbar):
 
@@ -181,7 +181,7 @@ Elyvo kann eine persönliche Bibliothek mit Referenzdokumenten führen, die du d
 
 - **Deine Dokumente verwalten.** Füge unter **Einstellungen → Ressourcen** Markdown-Dateien (`.md`) — jeweils bis zu **1 MB** — unter *Deine Dokumente* hinzu oder lösche nicht mehr benötigte. Dokumente sind privat für dein Konto. Wie viele Dokumente du behalten kannst, hängt von deinem Tarif ab.
 - **Pro Projekt aktivieren.** Hake für das aktive Projekt die Dokumente ab, die griffbereit sein sollen. Aktivierte Dokumente **öffnen sich automatisch als Tabs** im Dokumenten-Viewer, sobald du ihn für dieses Projekt öffnest. Das Aktivieren eines Dokuments steuert, was der Viewer für dieses Projekt anzeigt; es speist den Inhalt der Datei nicht in die Antworten des Assistenten ein.
-- **Den Viewer öffnen.** Wähle im Sitzungsmenü des Chat-Overlays (die Schaltfläche `···`) **Dokumente**. Es öffnet sich als eigenes, verschiebbares Fenster, das wie das Haupt-Overlay **vor Bildschirmfreigabe und -aufnahme verborgen** ist. Derselbe Menüpunkt schließt es wieder.
+- **Den Viewer öffnen.** Wähle im Sitzungsmenü des Chat-Overlays (die Schaltfläche `···`) **Dokumente**. Es öffnet sich als eigenes, verschiebbares Fenster. Derselbe Menüpunkt schließt es wieder.
 - **Lesen und wechseln.** Jedes Dokument öffnet sich in einem eigenen Tab. Nutze den **+**-Tab, um eines deiner Dokumente zu öffnen, klicke auf einen Tab zum Wechseln und auf **×**, um ihn zu schließen. Der Inhalt wird als formatiertes Markdown dargestellt und folgt deinem Chat-Theme und deiner Schriftgröße.
 
 ### Kalender und Meetings
@@ -200,15 +200,6 @@ Elyvo verbessert sich mit der Nutzung. Unter deinem **Profil** kannst du Folgend
 - **Begriffsklärungen** — Klarstellungen, die der Assistent gelernt hat (zum Beispiel, welchen „John" oder welches Projekt du meinst), damit er nicht mehr falsch rät.
 
 Selbstlernen hängt von deinem Tarif ab. Ohne es nutzt der Assistent weiterhin alles, was du selbst hinzufügst — er sammelt nur keine neuen Fakten mehr von sich aus.
-
-### Fensterschutz vor Bildschirmfreigabe
-
-Das Overlay ist bewusst für Aufnahmen unsichtbar, sodass du es während eines geteilten Anrufs nutzen kannst, ohne dass es im Stream erscheint. Der Umfang unterscheidet sich je nach Plattform — die [Haupt-README](../README.md#window-protection-from-screen-sharing) ist die maßgebliche Übersicht. Kurz zusammengefasst:
-
-- **Windows 11** — standardmäßig vor allen Aufnahmearten verborgen.
-- **Windows 10** — derselbe Schutz, aber **nicht garantiert**: Eine bekannte Einschränkung des Betriebssystems kann dazu führen, dass das Overlay in der Aufnahme als schwarzes Rechteck erscheint, statt sauber verborgen zu werden.
-- **Linux (KDE / KWin)** — standardmäßig vor Bildschirm*aufnahme und -freigabe* verborgen. Auf **KWin 6.7.0+ (Plasma 6.7+)** sind auch statische *Screenshots* standardmäßig verborgen — kein Patch nötig. Auf älterem KWin (≤ 6.6.x) ist, um es vor statischen *Screenshots* (Spectacle/PrintScreen) zu verbergen, einmalig ein KWin-Patch nötig, der nach KWin-Updates erneut angewendet werden muss.
-- **macOS** — verwendet denselben nativen Inhaltsschutzmechanismus. Zuverlässig auf **macOS 14 und früher**; auf **macOS 15 und neuer** ist die Unerkennbarkeit **nicht garantiert**, und das Overlay kann in Aufnahmen erscheinen.
 
 ---
 
@@ -254,8 +245,6 @@ Lade zum Aktualisieren das neueste Installationsprogramm für deine Plattform vo
 **Das Overlay erscheint nicht.** Stelle sicher, dass die App läuft (prüfe die Taskleiste/Menüleiste), und drücke die Umschalt-Tastenkombination (`Ctrl+\`). Vergewissere dich unter macOS, dass die Bedienungshilfen-Berechtigung erteilt ist, andernfalls lösen die globalen Tastenkombinationen nicht aus.
 
 **Es wird kein Audio aufgenommen.** Prüfe den Zugriff auf Mikrofon und Bildschirmaufnahme in den Datenschutzeinstellungen deines Betriebssystems, und verwende dann den Mikrofon- / Systemton-Test unter **Einstellungen → Allgemein**, um die Pegel zu bestätigen. Elyvo verwendet das Standard-Eingabegerät deines Systems, stelle also das richtige Standardgerät in den Sound-Einstellungen deines Betriebssystems ein. Vergewissere dich unter Linux, dass PipeWire läuft.
-
-**Das Overlay wird unter Linux weiterhin in Screenshots angezeigt.** Bildschirm*aufnahme/-freigabe* wird standardmäßig verborgen. Auf KWin 6.7.0+ (Plasma 6.7+) sind Screenshots standardmäßig verborgen; auf älterem KWin erfordern statische Screenshots den einmaligen KWin-Patch, der im [README](../README.md#window-protection-from-screen-sharing) beschrieben ist — wende ihn nach KWin-Updates erneut an.
 
 **Anmeldeprobleme.** Versuche die alternative Methode (E-Mail/Passwort statt Google oder umgekehrt) und stelle sicher, dass deine Systemuhr korrekt eingestellt ist — OAuth und die Token-Validierung sind zeitkritisch.
 

@@ -2,7 +2,7 @@
 
 > 🌐 This guide is also available in: **English** · [Беларуская](USER_GUIDE.be.md) · [Deutsch](USER_GUIDE.de.md) · [Español](USER_GUIDE.es.md) · [Français](USER_GUIDE.fr.md) · [Italiano](USER_GUIDE.it.md) · [Português](USER_GUIDE.pt.md) · [Русский](USER_GUIDE.ru.md) · [Українська](USER_GUIDE.uk.md)
 
-Elyvo Assist is a desktop AI assistant for meetings, research, and brainstorming. It lives as a translucent overlay above any window, summoned with a hotkey. It can listen to your microphone and system audio, transcribe live, look at your screen, and answer questions in context — while staying hidden from screen sharing and screen recording.
+Elyvo Assist is a desktop AI assistant for meetings, research, and brainstorming. It lives as a translucent overlay above any window, summoned with a hotkey. It can listen to your microphone and system audio, transcribe live, look at your screen, and answer questions in context.
 
 This guide covers installation and an overview of the main features.
 
@@ -44,7 +44,7 @@ Each release contains, per version `X.Y.Z`:
 2. Open the disk image and drag **Elyvo Assist** into **Applications**.
 3. On first launch, macOS may warn that the app is from an unidentified developer. Right-click the app → **Open** → **Open** to allow it.
 
-> **Linux requirements.** Elyvo Assist targets the **KDE Plasma** desktop on **Wayland**. The overlay's screen-capture protection is implemented through KWin (KDE's compositor), so the hide-from-screen-sharing behavior works only under KDE/KWin. Other desktops (GNOME, etc.) can run the app, but the capture-protection guarantees do not apply. You also need a running **PipeWire** session for microphone and system-audio capture.
+> **Linux requirements.** Elyvo Assist targets the **KDE Plasma** desktop on **Wayland**, and integrates with KWin (KDE's compositor). Other desktops (GNOME, etc.) can run the app, but window behaviour may differ. You also need a running **PipeWire** session for microphone and system-audio capture.
 
 ### Linux — Debian / Ubuntu
 
@@ -98,7 +98,7 @@ Audio and microphone settings themselves can't be configured inside the app — 
 
 ## The overlay and hotkeys
 
-Elyvo Assist is driven almost entirely by the keyboard so you can use it without leaving your meeting. The chat overlay floats on top of other windows, is draggable, and is **hidden from screen sharing and recording** (see [window protection](../README.md#window-protection-from-screen-sharing)).
+Elyvo Assist is driven almost entirely by the keyboard so you can use it without leaving your meeting. The chat overlay floats on top of other windows and is draggable.
 
 Default hotkeys (all rebindable in **Settings → Keybinds**):
 
@@ -181,7 +181,7 @@ Elyvo can keep a personal library of reference documents that you can pull up as
 
 - **Manage your documents.** In **Settings → Resources**, add Markdown (`.md`) files — up to **1 MB** each — under *Your documents*, or delete ones you no longer need. Documents are private to your account. How many documents you can keep depends on your plan.
 - **Enable per project.** For the active project, tick the documents you want ready to hand. Enabled documents **auto-open as tabs** in the Documents viewer whenever you open it for that project. Enabling a document controls what the viewer shows for that project; it does not feed the file's contents into the assistant's answers.
-- **Open the viewer.** From the chat overlay's session menu (the `···` button), choose **Documents**. It opens as its own draggable window that, like the main overlay, is **hidden from screen sharing and recording**. The same menu item toggles it closed.
+- **Open the viewer.** From the chat overlay's session menu (the `···` button), choose **Documents**. It opens as its own draggable window. The same menu item toggles it closed.
 - **Read and switch.** Each document opens in its own tab. Use the **+** tab to open any of your documents, click a tab to switch, and **×** to close it. Content renders as formatted Markdown and follows your chat theme and font size.
 
 ### Calendar and meetings
@@ -200,15 +200,6 @@ Elyvo improves with use. Under your **Profile** you can review and edit:
 - **Disambiguations** — clarifications the assistant has learned (for example, which "John" or which project you mean) so it stops guessing wrong.
 
 Self-learning depends on your plan. Without it the assistant still uses everything you add yourself — it just stops collecting new facts on its own.
-
-### Window protection from screen sharing
-
-The overlay is deliberately invisible to capture so you can use it during a shared call without it appearing in the stream. Coverage differs by platform — the [main README](../README.md#window-protection-from-screen-sharing) is the authoritative matrix. In short:
-
-- **Windows 11** — hidden from all capture types out of the box.
-- **Windows 10** — same protection, but **not guaranteed**: a known OS limitation can show the overlay as a black rectangle in the capture instead of hiding it cleanly.
-- **Linux (KDE / KWin)** — hidden from screen *recording and sharing* out of the box. On **KWin 6.7.0+ (Plasma 6.7+)** static *screenshots* are also hidden out of the box — no patch needed. On older KWin (≤ 6.6.x), hiding it from static *screenshots* (Spectacle/PrintScreen) needs a one-time KWin patch, re-applied after KWin updates.
-- **macOS** — uses the same native content-protection mechanism. Reliable on **macOS 14 and earlier**; on **macOS 15 and later** undetectability is **not guaranteed** and the overlay may appear in captures.
 
 ---
 
@@ -254,8 +245,6 @@ To update, download the newest installer for your platform from [Releases](https
 **The overlay won't appear.** Make sure the app is running (check the tray/menu bar) and press the toggle hotkey (`Ctrl+\`). On macOS, confirm Accessibility permission is granted, otherwise global hotkeys won't fire.
 
 **No audio is captured.** Confirm microphone and screen-capture access in your OS privacy settings, then use the microphone / system-audio test in **Settings → General** to confirm levels. Elyvo uses your system's default input device, so set the right default in your OS sound settings. On Linux, confirm PipeWire is running.
-
-**The overlay still shows in screenshots on Linux.** Screen *recording/sharing* is hidden by default. On KWin 6.7.0+ (Plasma 6.7+) screenshots are hidden out of the box; on older KWin, static screenshots require the one-time KWin patch described in the [README](../README.md#window-protection-from-screen-sharing) — re-apply it after KWin updates.
 
 **Sign-in problems.** Try the alternate method (email/password vs. Google), and make sure your system clock is correct — OAuth and token validation are time-sensitive.
 
