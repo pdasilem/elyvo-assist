@@ -141,7 +141,7 @@ Como funciona a rotação: num modo de candidato, o Assist responde à pergunta 
 
 Os **Modos** permitem-lhe adaptar o comportamento do assistente a diferentes situações. Cada modo tem o seu próprio prompt de sistema e um modelo de notas opcional. Faça a gestão em **Modos**:
 
-- Comece pela **Galeria de Modelos** — os modelos são fornecidos pelo servidor e mudam ao longo do tempo — ou crie um modo de raiz.
+- Comece pela **Galeria de Modelos** — os modelos são fornecidos pelo servidor, dependem do seu plano e mudam ao longo do tempo — ou crie um modo de raiz. Os planos inferiores recebem um conjunto padrão para as situações mais comuns; os superiores, um conjunto alargado.
 - Edite o prompt de sistema para definir o tom, o papel e as regras adequados a essa situação.
 - Anexe **ficheiros de modo** — material de referência que o assistente deve ter em conta para esse modo.
 - Marque um modo como ativo; existe sempre um modo geral/predefinido disponível.
@@ -155,6 +155,7 @@ O chat ambiente é um chat leve e sempre disponível que o acompanha em toda a a
 O Elyvo funciona em qualquer plano; uma subscrição alargada aumenta os limites e desbloqueia o trabalho em conjunto. Em traços gerais, um plano superior dá-lhe:
 
 - sessões mais longas e mais frequentes;
+- um conjunto alargado de modos prontos a usar na Galeria de Modelos;
 - margem para mais projetos e mais documentos;
 - a possibilidade de partilhar um projeto com outras pessoas — aceitar um convite e trabalhar no projeto de outra pessoa é possível em qualquer plano;
 - utilizar a aplicação em mais do que um dispositivo ao mesmo tempo;

@@ -141,7 +141,7 @@ So funktioniert die Rotation: In einem Kandidaten-Modus beantwortet Assist die a
 
 Mit **Modi** kannst du das Verhalten des Assistenten für verschiedene Situationen anpassen. Jeder Modus hat seinen eigenen System-Prompt und optional eine Notizvorlage. Verwalte sie unter **Modi**:
 
-- Starte mit der **Vorlagen-Galerie** — ihre Vorlagen werden vom Server bereitgestellt und ändern sich mit der Zeit — oder erstelle einen Modus von Grund auf.
+- Starte mit der **Vorlagen-Galerie** — ihre Vorlagen werden vom Server bereitgestellt, hängen von deinem Tarif ab und ändern sich mit der Zeit — oder erstelle einen Modus von Grund auf. Niedrigere Tarife erhalten einen Standardsatz für die häufigsten Situationen, höhere einen erweiterten.
 - Bearbeite den System-Prompt, um Tonfall, Rolle und Regeln für diese Situation festzulegen.
 - Hänge **Modus-Dateien** an — Referenzmaterial, das der Assistent für diesen Modus berücksichtigen soll.
 - Markiere einen Modus als aktiv; es gibt immer einen allgemeinen Standardmodus.
@@ -155,6 +155,7 @@ Der Ambient-Chat ist ein schlanker, jederzeit verfügbarer Chat, der dich durch 
 Elyvo funktioniert in jedem Tarif; ein erweitertes Abonnement hebt die Grenzen an und schaltet die gemeinsame Arbeit frei. Grob gesagt bietet ein höherer Tarif:
 
 - längere und häufigere Sitzungen;
+- einen erweiterten Satz fertiger Modi in der Vorlagen-Galerie;
 - Spielraum für mehr Projekte und mehr Dokumente;
 - die Möglichkeit, ein Projekt mit anderen zu teilen — eine Einladung annehmen und im Projekt anderer arbeiten kannst du in jedem Tarif;
 - die Nutzung der App auf mehr als einem Gerät gleichzeitig;

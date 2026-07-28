@@ -141,7 +141,7 @@ Comment fonctionne la rotation : dans un mode candidat, Assist répond à la que
 
 Les **Modes** vous permettent d'adapter le comportement de l'assistant selon les situations. Chaque mode dispose de son propre prompt système et d'un modèle de notes optionnel. Gérez-les sous **Modes** :
 
-- Partez de la **Galerie de modèles** — ses modèles sont fournis par le serveur et évoluent avec le temps — ou créez un mode à partir de zéro.
+- Partez de la **Galerie de modèles** — ses modèles sont fournis par le serveur, dépendent de votre offre et évoluent avec le temps — ou créez un mode à partir de zéro. Les offres inférieures disposent d'un jeu standard couvrant les situations courantes ; les offres supérieures, d'un jeu étendu.
 - Modifiez le prompt système pour définir le ton, le rôle et les règles adaptés à cette situation.
 - Joignez des **fichiers de mode** — du matériel de référence que l'assistant doit garder à l'esprit pour ce mode.
 - Marquez un mode comme actif ; un mode général/par défaut est toujours disponible.
@@ -155,6 +155,7 @@ Le chat ambiant est un chat léger, toujours disponible, qui vous suit dans tout
 Elyvo fonctionne avec toutes les offres ; un abonnement étendu relève les limites et débloque le travail à plusieurs. En résumé, une offre supérieure vous donne :
 
 - des sessions plus longues et plus fréquentes ;
+- un jeu étendu de modes prêts à l'emploi dans la Galerie de modèles ;
 - de la marge pour plus de projets et plus de documents ;
 - la possibilité de partager un projet avec d'autres personnes — accepter une invitation et travailler dans le projet de quelqu'un d'autre reste possible avec n'importe quelle offre ;
 - l'utilisation de l'application sur plusieurs appareils à la fois ;

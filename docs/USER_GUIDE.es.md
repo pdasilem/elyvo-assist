@@ -141,7 +141,7 @@ Cómo funciona la rotación: en un modo de candidato, Assist responde la pregunt
 
 Los **modos** te permiten adaptar el comportamiento del asistente a diferentes situaciones. Cada modo tiene su propio mensaje de sistema (system prompt) y una plantilla de notas opcional. Gestiónalos en **Modos**:
 
-- Comienza desde la **Galería de plantillas** — sus plantillas las proporciona el servidor y cambian con el tiempo — o crea un modo desde cero.
+- Comienza desde la **Galería de plantillas** — sus plantillas las proporciona el servidor, dependen de tu plan y cambian con el tiempo — o crea un modo desde cero. Los planes inferiores reciben un conjunto estándar para las situaciones más comunes; los superiores, uno ampliado.
 - Edita el mensaje de sistema para establecer el tono, el rol y las reglas de esa situación.
 - Adjunta **archivos de modo**: material de referencia que el asistente debe tener en cuenta para ese modo.
 - Marca un modo como activo; siempre hay disponible un modo general/predeterminado.
@@ -155,6 +155,7 @@ El chat ambiental es un chat ligero y siempre disponible que te sigue a través 
 Elyvo funciona con cualquier plan; una suscripción ampliada eleva los límites y desbloquea el trabajo en equipo. A grandes rasgos, un plan superior te da:
 
 - sesiones más largas y más frecuentes;
+- un conjunto ampliado de modos listos para usar en la Galería de plantillas;
 - margen para más proyectos y más documentos;
 - la posibilidad de compartir un proyecto con otras personas — aceptar una invitación y trabajar en el proyecto de otra persona es posible en cualquier plan;
 - usar la app en más de un dispositivo a la vez;

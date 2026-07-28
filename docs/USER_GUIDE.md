@@ -141,7 +141,7 @@ How the rotation works: in a candidate-style mode Assist answers the question di
 
 **Modes** let you tailor how the assistant behaves for different situations. Each mode has its own system prompt and an optional notes template. Manage them under **Modes**:
 
-- Start from the **Template Gallery** — its templates are provided by the server and change over time — or create a mode from scratch.
+- Start from the **Template Gallery** — its templates come from the server, depend on your plan, and change over time — or create a mode from scratch. Lower plans get a standard set covering the common situations; higher plans get an extended one.
 - Edit the system prompt to set tone, role, and rules for that situation.
 - Attach **mode files** — reference material the assistant should keep in mind for that mode.
 - Mark one mode active; there is always a general/default mode available.
@@ -155,6 +155,7 @@ Ambient chat is a lightweight, always-available chat that follows you across the
 Elyvo works on every plan; an extended subscription widens the limits and unlocks the collaborative side of the app. In broad terms, a higher plan gives you:
 
 - longer and more frequent sessions;
+- an extended set of ready-made modes in the Template Gallery;
 - room for more projects and more documents;
 - the ability to share a project with other people — on any plan you can always accept an invitation and work in someone else's project;
 - use of the app on more than one device at the same time;

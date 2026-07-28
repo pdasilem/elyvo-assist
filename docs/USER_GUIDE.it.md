@@ -141,7 +141,7 @@ Come funziona la rotazione: in una modalità da candidato, Assist risponde alla 
 
 Le **Modalità** ti permettono di personalizzare il comportamento dell'assistente in base alla situazione. Ogni modalità ha un proprio prompt di sistema e un modello di note opzionale. Gestiscile in **Modalità**:
 
-- Parti dalla **Galleria dei modelli** — i suoi modelli sono forniti dal server e cambiano nel tempo — oppure crea una modalità da zero.
+- Parti dalla **Galleria dei modelli** — i suoi modelli sono forniti dal server, dipendono dal tuo piano e cambiano nel tempo — oppure crea una modalità da zero. I piani inferiori ricevono un set standard per le situazioni più comuni; quelli superiori, uno esteso.
 - Modifica il prompt di sistema per definire tono, ruolo e regole adatti a quella situazione.
 - Allega **file della modalità** — materiale di riferimento che l'assistente deve tenere presente per quella modalità.
 - Contrassegna una modalità come attiva; è sempre disponibile una modalità generale/predefinita.
@@ -155,6 +155,7 @@ La chat ambientale è una chat leggera, sempre disponibile, che ti segue in tutt
 Elyvo funziona con qualsiasi piano; un abbonamento esteso alza i limiti e sblocca il lavoro condiviso. In generale, un piano superiore offre:
 
 - sessioni più lunghe e più frequenti;
+- un set esteso di modalità pronte all'uso nella Galleria dei modelli;
 - spazio per più progetti e più documenti;
 - la possibilità di condividere un progetto con altre persone — accettare un invito e lavorare nel progetto di qualcun altro è sempre possibile, con qualsiasi piano;
 - l'uso dell'app su più di un dispositivo alla volta;
