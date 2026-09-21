@@ -228,8 +228,6 @@ To update, download the newest installer for your platform from [Releases](https
 - **Debian / Ubuntu:** `sudo apt install ./elyvo-assist-<new-version>-linux-x86_64.deb`.
 - **Windows / macOS:** run the new installer / open the new DMG.
 
-> Linux KDE users on KWin older than 6.7.0: re-apply the KWin screenshot patch after a KWin system update if you rely on screenshot protection. If the update brings you to KWin 6.7.0 or newer, the patch is no longer needed — protection is built in.
-
 ---
 
 ## Uninstalling

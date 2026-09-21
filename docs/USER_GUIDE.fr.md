@@ -228,8 +228,6 @@ Pour mettre à jour, téléchargez le dernier installateur pour votre plateforme
 - **Debian / Ubuntu :** `sudo apt install ./elyvo-assist-<nouvelle-version>-linux-x86_64.deb`.
 - **Windows / macOS :** exécutez le nouvel installateur / ouvrez le nouveau DMG.
 
-> Utilisateurs Linux KDE avec un KWin antérieur à 6.7.0 : réappliquez le correctif KWin pour les captures d'écran après une mise à jour système de KWin si vous comptez sur la protection des captures d'écran. Si la mise à jour vous amène à KWin 6.7.0 ou plus récent, le correctif n'est plus nécessaire — la protection est intégrée.
-
 ---
 
 ## Désinstallation
