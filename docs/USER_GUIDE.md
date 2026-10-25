@@ -14,6 +14,7 @@ This guide covers installation and an overview of the main features.
 - [Settings](#settings)
 - [Updating](#updating)
 - [Uninstalling](#uninstalling)
+- [Translator: virtual microphone](#translator-virtual-microphone)
 - [Troubleshooting](#troubleshooting)
 
 ---
@@ -236,6 +237,20 @@ To update, download the newest installer for your platform from [Releases](https
 - **macOS** — drag **Elyvo Assist** from *Applications* to the Trash.
 - **Debian / Ubuntu** — `sudo apt remove elyvo-assist`.
 - **Arch / Manjaro** — `sudo pacman -R elyvo-assist`.
+
+---
+
+## Translator: virtual microphone
+
+The translator sends your translated voice to your call app through a virtual microphone.
+
+**Windows.** Download VB-CABLE from [vb-audio.com/Cable](https://vb-audio.com/Cable/), extract the archive, run the installer as administrator and restart your computer.
+
+**macOS.** Download VB-CABLE for macOS from [vb-audio.com/Cable](https://vb-audio.com/Cable/) and install it.
+
+**Linux.** Nothing to install — Elyvo creates the virtual microphone itself.
+
+**Setting up your call app.** After you turn the translator on, choose “CABLE Output” (Windows), “VB-Cable” (macOS) or “Elyvo-Translator-Microphone” (Linux) as the microphone in Zoom, Teams, Discord or your other call app. After you turn the translator off, switch back to your own microphone.
 
 ---
 

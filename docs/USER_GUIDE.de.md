@@ -14,6 +14,7 @@ Dieser Leitfaden behandelt die Installation und einen Überblick über die wicht
 - [Einstellungen](#einstellungen)
 - [Aktualisieren](#aktualisieren)
 - [Deinstallieren](#deinstallieren)
+- [Übersetzer: virtuelles Mikrofon](#übersetzer-virtuelles-mikrofon)
 - [Fehlerbehebung](#fehlerbehebung)
 
 ---
@@ -236,6 +237,20 @@ Lade zum Aktualisieren das neueste Installationsprogramm für deine Plattform vo
 - **macOS** — ziehe **Elyvo Assist** aus dem Ordner *Programme* in den Papierkorb.
 - **Debian / Ubuntu** — `sudo apt remove elyvo-assist`.
 - **Arch / Manjaro** — `sudo pacman -R elyvo-assist`.
+
+---
+
+## Übersetzer: virtuelles Mikrofon
+
+Der Übersetzer leitet deine übersetzte Stimme über ein virtuelles Mikrofon an deine Anruf-App weiter.
+
+**Windows.** Lade VB-CABLE von [vb-audio.com/Cable](https://vb-audio.com/Cable/) herunter, entpacke das Archiv, starte das Installationsprogramm als Administrator und starte den Computer neu.
+
+**macOS.** Lade VB-CABLE für macOS von [vb-audio.com/Cable](https://vb-audio.com/Cable/) herunter und installiere es.
+
+**Linux.** Nichts zu installieren — Elyvo erstellt das virtuelle Mikrofon selbst.
+
+**Anruf-App einrichten.** Wähle nach dem Einschalten des Übersetzers in Zoom, Teams, Discord oder einer anderen Anruf-App „CABLE Output“ (Windows), „VB-Cable“ (macOS) oder „Elyvo-Translator-Microphone“ (Linux) als Mikrofon. Stelle nach dem Ausschalten des Übersetzers wieder dein eigenes Mikrofon ein.
 
 ---
 
